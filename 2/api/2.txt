@@ -1,0 +1,382 @@
+package com.hsae.autosdk.vehicle {
+
+  public class Vehicle {
+    method public int getCurPowerMode() throws android.os.RemoteException;
+    method public boolean[] getDoorState() throws android.os.RemoteException;
+    method public int getECM_48V_Status() throws android.os.RemoteException;
+    method public int getGearStatus() throws android.os.RemoteException;
+    method public boolean getIgnState() throws android.os.RemoteException;
+    method public boolean getKeyLeaveCarState() throws android.os.RemoteException;
+    method public int getParkState() throws android.os.RemoteException;
+    method public int[] getSaftBelt() throws android.os.RemoteException;
+    method public int getSpeed() throws android.os.RemoteException;
+    method public int[] getTpmsStatus() throws android.os.RemoteException;
+    method public int getTurnLight() throws android.os.RemoteException;
+    method public int getVehicleType() throws android.os.RemoteException;
+    method public boolean isAccOn();
+    method public boolean isSafetyLockEnabled();
+    method public boolean registerListener(com.hsae.autosdk.vehicle.Vehicle.VehicleListener, android.content.Context, java.lang.String) throws android.os.RemoteException;
+    method public boolean registerNotifyListener(int);
+    method public void unRegisterListener(com.hsae.autosdk.vehicle.Vehicle.VehicleListener) throws android.os.RemoteException;
+    method public boolean unregisterNotifyListener(int);
+    field public static final int ROUTE = 2; // 0x2
+    field public static final int SPEED = 1; // 0x1
+    field public static final int STEER = 3; // 0x3
+  }
+
+  public static abstract interface Vehicle.VehicleListener {
+    method public abstract void keyLeaveCarRemind(boolean);
+    method public abstract void onABSFaultResponse(int);
+    method public abstract void onAccStateResponse(boolean);
+    method public abstract void onAverageFuelConsumptionResponse(float);
+    method public abstract void onBatteryPowerResponse(int);
+    method public abstract void onBrakeForceResponse(int);
+    method public abstract void onDetectedEngineResponse(int);
+    method public abstract void onDoorResponse(boolean, boolean, boolean, boolean, boolean);
+    method public abstract void onECM_48V_StatusResponse(int);
+    method public abstract void onEPSDetectionResponse(int);
+    method public abstract void onEngineRotatingSpeedResponse(float);
+    method public abstract void onHydraulicOilDetectedResponse(int);
+    method public abstract void onIgnResponse(boolean);
+    method public abstract void onIllStateResponse(boolean, boolean, boolean, boolean);
+    method public abstract void onLaneWarningSensorInfoResponse(int);
+    method public abstract void onParkingResponse(int);
+    method public abstract void onRemainingOil(int, int, int, int);
+    method public abstract void onSafetyBeltResponse(int, int);
+    method public abstract void onSteeringWheelAngleResponse(int);
+    method public abstract void onStreeringWheelReationSpeed(int, int);
+    method public abstract void onThrottleEffortsResponse(int);
+    method public abstract void onTotalMileageResponse(long);
+    method public abstract void onTpmsInfoResponse(int, int, int);
+    method public abstract void onTurnSignalsInfoResponse(int);
+    method public abstract void onVDCDetectionResponse(int);
+    method public abstract void onVehicleGearInfoResponse(int);
+    method public abstract void onVehicleMileageInfoResponse(float);
+    method public abstract void onVehicleSpeedInfoResponse(int);
+    method public abstract void onVehicleSpeedPulseInfoResponse(int);
+    method public abstract void onWiperStateResponse(int);
+  }
+
+  public class VehicleConst {
+    ctor public VehicleConst();
+  }
+
+  public static class VehicleConst.Air {
+    ctor public VehicleConst.Air();
+  }
+
+  public static final class VehicleConst.Air.AirMode extends java.lang.Enum {
+    method public static com.hsae.autosdk.vehicle.VehicleConst.Air.AirMode valueOf(java.lang.String);
+    method public static final com.hsae.autosdk.vehicle.VehicleConst.Air.AirMode[] values();
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.Air.AirMode HEATING;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.Air.AirMode REFRIGERATION;
+  }
+
+  public static final class VehicleConst.Air.WindDirection extends java.lang.Enum {
+    method public static com.hsae.autosdk.vehicle.VehicleConst.Air.WindDirection valueOf(java.lang.String);
+    method public static final com.hsae.autosdk.vehicle.VehicleConst.Air.WindDirection[] values();
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.Air.WindDirection ALL;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.Air.WindDirection BELOW;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.Air.WindDirection MIDDLE_ABOVE;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.Air.WindDirection MIDDLE_BELOW;
+  }
+
+  public static final class VehicleConst.Air.WindSpeed extends java.lang.Enum {
+    method public static com.hsae.autosdk.vehicle.VehicleConst.Air.WindSpeed valueOf(java.lang.String);
+    method public static final com.hsae.autosdk.vehicle.VehicleConst.Air.WindSpeed[] values();
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.Air.WindSpeed FOUR;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.Air.WindSpeed ONE;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.Air.WindSpeed THREE;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.Air.WindSpeed TWO;
+  }
+
+  public static class VehicleConst.Ill {
+    ctor public VehicleConst.Ill();
+    field public static final java.lang.String ACTION_DAY_NIGHT_MODE = "com.hsae.auto.ACTION_DAY_NIGHT_MODE";
+    field public static final java.lang.String EXTRA_BE_AT_NIGHT = "com.hsae.auto.EXTRA_BE_AT_NIGHT";
+    field public static final java.lang.String EXTRA_BRIGHTNESS_VALUE = "com.hsae.auto.EXTRA_BRIGHTNESS_VALUE";
+  }
+
+  public static final class VehicleConst.Ill.DayNight extends java.lang.Enum {
+    method public static com.hsae.autosdk.vehicle.VehicleConst.Ill.DayNight find(int);
+    method public static com.hsae.autosdk.vehicle.VehicleConst.Ill.DayNight valueOf(java.lang.String);
+    method public static final com.hsae.autosdk.vehicle.VehicleConst.Ill.DayNight[] values();
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.Ill.DayNight DAY;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.Ill.DayNight NIGHT;
+  }
+
+  public static final class VehicleConst.Ill.Default {
+    ctor public VehicleConst.Ill.Default();
+    field public static final int BL_BRIGHTNESS = 10; // 0xa
+    field public static final int CONTRAST = 6; // 0x6
+    field public static final com.hsae.autosdk.vehicle.VehicleConst.Ill.DayNight DAY_NIGHT;
+  }
+
+  public class VehicleConst.TurnLight {
+    ctor public VehicleConst.TurnLight();
+    field public static final int DOUBLE_FLASH = 3; // 0x3
+    field public static final int LEFT = 1; // 0x1
+    field public static final int OFF = 0; // 0x0
+    field public static final int RIGHT = 2; // 0x2
+  }
+
+  public static class VehicleConst.VehicleData {
+    ctor public VehicleConst.VehicleData();
+    field public static final boolean ACC_STATE = true;
+    field public static final java.lang.String ACTION_ACC_STATE = "com.hsae.auto.ACTION_ACC_STATE";
+    field public static final java.lang.String ACTION_B_PLUS_OFF = "com.hsae.auto.ACTION_B_PLUS_OFF";
+    field public static final java.lang.String ACTION_PARKING_STATE = "com.hsae.auto.ACTION_PARKING_STATE";
+    field public static final java.lang.String ACTION_POWER_STATE = "com.hsae.auto.ACTION_POWER_STATE";
+    field public static final java.lang.String ACTION_SAFETY_LOCK = "com.hsae.auto.ACTION_SAFETY_LOCK";
+    field public static final java.lang.String ACTION_VEHICLE_SPEED = "com.hsae.auto.ACTION_VEHICLE_SPEED";
+    field public static final int ALARM_SIZE = 42; // 0x2a
+    field public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleData.AutoType AUTO_TYPE;
+    field public static final java.lang.String EXTRA_ACC_STATE = "com.hsae.auto.EXTRA_ACC_STATE";
+    field public static final java.lang.String EXTRA_PARKING_STATE = "com.hsae.auto.EXTRA_PARKING_STATE";
+    field public static final java.lang.String EXTRA_POWER_STATE = "com.hsae.auto.EXTRA_POWER_STATE";
+    field public static final java.lang.String EXTRA_VEHICLE_SPEED = "com.hsae.auto.EXTRA_VEHICLE_SPEED";
+    field public static final boolean PARKING_STATE = false;
+  }
+
+  public static final class VehicleConst.VehicleData.AutoType extends java.lang.Enum {
+    method public static com.hsae.autosdk.vehicle.VehicleConst.VehicleData.AutoType find(int);
+    method public static com.hsae.autosdk.vehicle.VehicleConst.VehicleData.AutoType valueOf(java.lang.String);
+    method public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleData.AutoType[] values();
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleData.AutoType MC322;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleData.AutoType MC531;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleData.AutoType MC532;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleData.AutoType MC591;
+  }
+
+  public static final class VehicleConst.VehicleData.Gear extends java.lang.Enum {
+    method public int pid();
+    method public static com.hsae.autosdk.vehicle.VehicleConst.VehicleData.Gear valueOf(java.lang.String);
+    method public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleData.Gear[] values();
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleData.Gear B;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleData.Gear D;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleData.Gear L;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleData.Gear N;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleData.Gear OFF;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleData.Gear P;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleData.Gear R;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleData.Gear S;
+  }
+
+  public static final class VehicleConst.VehicleEquipment extends java.lang.Enum {
+    method public static com.hsae.autosdk.vehicle.VehicleConst.VehicleEquipment valueOf(java.lang.String);
+    method public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleEquipment[] values();
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleEquipment ALARM_BEAMS;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleEquipment HIGH_BEAMS;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleEquipment LOW_BEAMS;
+    enum_constant public static final com.hsae.autosdk.vehicle.VehicleConst.VehicleEquipment SKYLIGHT;
+  }
+
+  public class VehicleConst.VehicleMalfunction {
+    ctor public VehicleConst.VehicleMalfunction();
+    field public static final int ABS_FAULT_04H = 4; // 0x4
+    field public static final int DETECTION_ENGINE_01H = 1; // 0x1
+    field public static final int EPS_DETECTION_03H = 3; // 0x3
+    field public static final int HYDRAULIC_OIL_DETECTED_00H = 0; // 0x0
+    field public static final int LANE_WARNING_SENSOR_INFORMATION_05H = 5; // 0x5
+    field public static final int VDC_DETECTION_02H = 2; // 0x2
+  }
+
+  public class VehicleConst.VehicleType {
+    ctor public VehicleConst.VehicleType();
+    field public static final int D322 = 8; // 0x8
+    field public static final int D531_MC17 = 0; // 0x0
+    field public static final int INVALID = -1; // 0xffffffff
+  }
+
+}
+
+package com.hsae.autosdk_external.settings {
+
+  public abstract interface AutoExternalListener {
+    method public abstract void onDayNightAutoStateResponse(com.hsae.autosdk.vehicle.VehicleConst.Ill.DayNight);
+    method public abstract void onNotifyDA_UIstyle(int);
+    method public abstract void onNotifyExternalUSBStoragePath(java.lang.String);
+    method public abstract void onNotifyProjectionSize(int);
+    method public abstract void onScreenStateResponse(boolean);
+  }
+
+  public class AutoSettings_external {
+    method public int getDA_UIstyle() throws android.os.RemoteException;
+    method public com.hsae.autosdk.vehicle.VehicleConst.Ill.DayNight getDayNightMode();
+    method public java.lang.String getDeviceIdEx() throws android.os.RemoteException;
+    method public java.lang.String getExternalUSBStoragePath() throws android.os.RemoteException;
+    method public java.lang.String getHardwareType() throws android.os.RemoteException;
+    method public boolean getPowerState() throws android.os.RemoteException;
+    method public int getProjectionSize() throws android.os.RemoteException;
+    method public java.lang.String getVinCode() throws android.os.RemoteException;
+    method public int initProject(int, int, int, int, int) throws android.os.RemoteException;
+    method public void registerAuto_externalCallback(com.hsae.autosdk_external.settings.AutoSettings_external.Auto_externalListener) throws android.os.RemoteException;
+    method public int resetProject(int) throws android.os.RemoteException;
+    method public int resizeProjectVirtualDisplay(int, int, int) throws android.os.RemoteException;
+    method public void unregisterAuto_externalCallback(com.hsae.autosdk_external.settings.AutoSettings_external.Auto_externalListener) throws android.os.RemoteException;
+  }
+
+  public static abstract interface AutoSettings_external.Auto_externalListener {
+    method public abstract void onDayNightAutoStateResponse(com.hsae.autosdk.vehicle.VehicleConst.Ill.DayNight);
+    method public abstract void onNotifyDA_UIstyle(int);
+    method public abstract void onNotifyExternalUSBStoragePath(java.lang.String);
+    method public abstract void onNotifyProjectionSize(int);
+    method public abstract void onScreenStateResponse(boolean);
+  }
+
+}
+
+package hsae.content {
+
+  public abstract class HsaeContext {
+    ctor public HsaeContext();
+    method public abstract java.lang.Object getSystemService(java.lang.String);
+    field public static final java.lang.String HSAE_AUTO_SETTINGS = "hsae.AutoSettings";
+    field public static final java.lang.String HSAE_AUTO_SETTINGS_EX = "hsae.AutoSettingsEx";
+    field public static final java.lang.String HSAE_INPUT = "hsae.input";
+    field public static final deprecated java.lang.String HSAE_POPUP = "hsae.popup";
+    field public static final deprecated java.lang.String HSAE_SOURCE = "hsae.source";
+    field public static final java.lang.String HSAE_VEHICLE = "hsae.vehicle";
+    field public static final java.lang.String HSAE_VEHICLE_AUDIO = "hsae.audio";
+    field public static final java.lang.String HSAE_VEHICLE_POWER = "hsae.vehicle.power";
+    field public static final java.lang.String VEHICLE = "hsae.vehicle.service";
+  }
+
+}
+
+package hsae.vehicle {
+
+  public final class VMSConstant {
+    ctor public VMSConstant();
+    field public static final java.lang.String HSAE_AC_SERVICE = "hsae.vehicle.air.control";
+    field public static final java.lang.String HSAE_DEVICE_INFO_SERVICE = "deviceInfo";
+    field public static final java.lang.String HSAE_VEHICLE_METER = "hsae.vehicle.meter";
+  }
+
+  public final class VehicleManager {
+    method public java.lang.Object getVehicleService(java.lang.String);
+  }
+
+}
+
+package hsae.vehicle.ac {
+
+  public class VehicleACConstant {
+    ctor public VehicleACConstant();
+    method public static java.lang.String intergeToString(int);
+    field public static final int AC_AUTO = 4101; // 0x1005
+    field public static final int AC_AUTO_MODE = 4109; // 0x100d
+    field public static final int AC_AUTO_MODE_GEAR = 4120; // 0x1018
+    field public static final int AC_AUTO_TEMPDN_D_SET = 4113; // 0x1011
+    field public static final int AC_AUTO_TEMPDN_P_SET = 4115; // 0x1013
+    field public static final int AC_AUTO_TEMPUP_D_SET = 4112; // 0x1010
+    field public static final int AC_AUTO_TEMPUP_P_SET = 4114; // 0x1012
+    field public static final int AC_BLOWER_MINUS_SET = 4119; // 0x1017
+    field public static final int AC_BLOWER_PLUS_SET = 4118; // 0x1016
+    field public static final int AC_COMPRESSOR = 4097; // 0x1001
+    field public static final int AC_DEFROST_FEEDBACK = 4110; // 0x100e
+    field public static final int AC_FAN_SPEED_EDDBACK = 4098; // 0x1002
+    field public static final int AC_MAX = 4120; // 0x1018
+    field public static final int AC_MAX_AC = 4108; // 0x100c
+    field public static final int AC_MAX_RX = 4110; // 0x100e
+    field public static final int AC_MIN = 4097; // 0x1001
+    field public static final int AC_MODE = 4099; // 0x1003
+    field public static final int AC_ON_OFF = 4102; // 0x1006
+    field public static final int AC_RECIRC = 4105; // 0x1009
+    field public static final int AC_RR_DEFOG = 4106; // 0x100a
+    field public static final int AC_SYNC = 4103; // 0x1007
+    field public static final int AC_TARGET_TEMP_E = 4107; // 0x100b
+    field public static final int AC_TEMP_D = 4100; // 0x1004
+    field public static final int AC_TEMP_P = 4104; // 0x1008
+  }
+
+  public abstract interface VehicleACListener {
+    method public abstract void onDoubleResponse(int, double);
+  }
+
+  public class VehicleAirControl {
+    method public double getDoubleValue(int) throws android.os.RemoteException;
+    method public boolean registerListener(hsae.vehicle.ac.VehicleACListener);
+    method public boolean unregisterListener(hsae.vehicle.ac.VehicleACListener);
+  }
+
+}
+
+package hsae.vehicle.ivi {
+
+  public abstract interface DeviceInfoListener {
+    method public abstract void onDeviceInfoChange(java.lang.String, java.lang.String, java.lang.String);
+  }
+
+  public class HsaeDeviceInfo {
+    method public java.lang.String getDeviceInfo(java.lang.String, java.lang.String);
+    method public boolean registerListener(hsae.vehicle.ivi.DeviceInfoListener);
+    method public boolean registerListener(hsae.vehicle.ivi.DeviceInfoListener, android.content.IntentFilter);
+    method public void setDeviceInfo(java.lang.String, java.lang.String, java.lang.String);
+    method public void setPublicDeviceInfo(java.lang.String, java.lang.String, java.lang.String);
+    method public boolean unregisterListener(hsae.vehicle.ivi.DeviceInfoListener);
+    method public boolean unregisterListener(hsae.vehicle.ivi.DeviceInfoListener, android.content.IntentFilter);
+    field public static final java.lang.String MEDIA_STATE_TABLE = "hsae.vehicle.media.state";
+  }
+
+}
+
+package hsae.vehicle.meter {
+
+  public final class MeterMetadata {
+    ctor public MeterMetadata();
+    method public static java.lang.String toString(int);
+    field public static final int ACCUMULATIVE_DRIVE_FUEL = 654311426; // 0x27000002
+    field public static final int ACCUMULATIVE_DRIVE_TIME = 1157627921; // 0x45000011
+    field public static final int AVERAGE_FUEL_CONS_A = 655364128; // 0x27101020
+    field public static final int AVERAGE_FUEL_CONS_B = 655364144; // 0x27101030
+    field public static final int AVERAGE_VEHICLE_SPEED_A = 654311696; // 0x27000110
+    field public static final int AVERAGE_VEHICLE_SPEED_B = 654311712; // 0x27000120
+    field public static final int CUMULATIVE_AVERAGE_FUEL = 655364112; // 0x27101010
+    field public static final int CUMULATIVE_FUEL_ARRAY = 1207963648; // 0x48001000
+    field public static final int DRIVE_TIME_A = 620757264; // 0x25000110
+    field public static final int DRIVE_TIME_B = 620757280; // 0x25000120
+    field public static final int DTE_STATUS = 654311690; // 0x2700010a
+    field public static final int FUEL_LEVEL = 655364097; // 0x27101001
+    field public static final int PARKING_BRAKE_ON = 587202561; // 0x23000001
+    field public static final int PERF_ODOMETER = 654311683; // 0x27000103
+    field public static final int PROJECTION_SIZE = 587202563; // 0x23000003
+    field public static final int RANGE_REMAINING = 654311682; // 0x27000102
+    field public static final int REMAINING_FUEL_PERCENT = 654311681; // 0x27000101
+    field public static final int ROW_1_CENTER = 587206657; // 0x23001001
+    field public static final int ROW_1_LEFT = 587206656; // 0x23001000
+    field public static final int ROW_1_RIGHT = 587206658; // 0x23001002
+    field public static final int ROW_2_CENTER = 587206660; // 0x23001004
+    field public static final int ROW_2_LEFT = 587206659; // 0x23001003
+    field public static final int ROW_2_RIGHT = 587206661; // 0x23001005
+    field public static final int ROW_3_CENTER = 587206663; // 0x23001007
+    field public static final int ROW_3_LEFT = 587206662; // 0x23001006
+    field public static final int ROW_3_RIGHT = 587206664; // 0x23001008
+    field public static final int SINGLE_DRIVE_FUEL = 654311425; // 0x27000001
+    field public static final int SINGLE_DRIVE_TIME = 1157627905; // 0x45000001
+    field public static final int TIME_FORMAT = 318767105; // 0x13000001
+    field public static final int TRIP_A = 1191182337; // 0x47000001
+    field public static final int TRIP_B = 1191182338; // 0x47000002
+    field public static final int UI_STYLE = 587202562; // 0x23000002
+  }
+
+  public class VehicleMeter {
+    method public double[] getMeterArrayData(int);
+    method public double getMeterData(int);
+    method public boolean registerListener(hsae.vehicle.meter.VehicleMeterListener);
+    method public boolean registerListener(hsae.vehicle.meter.VehicleMeterListener, android.content.IntentFilter);
+    method public boolean setMeterArrayData(int, double[]);
+    method public boolean setMeterData(int, double);
+    method public boolean unregisterListener(hsae.vehicle.meter.VehicleMeterListener);
+    method public boolean unregisterListener(hsae.vehicle.meter.VehicleMeterListener, android.content.IntentFilter);
+  }
+
+  public abstract interface VehicleMeterListener {
+    method public abstract void onDoubleArrayCallback(int, double[]);
+    method public abstract void onDoubleCallback(int, double);
+    method public abstract void onStringArrayCallback(int, java.lang.String[]);
+    method public abstract void onStringCallback(int, java.lang.String);
+  }
+
+}
+
