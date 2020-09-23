@@ -251,6 +251,7 @@ package hsae.vehicle {
     field public static final java.lang.String HSAE_AC_SERVICE = "hsae.vehicle.air.control";
     field public static final java.lang.String HSAE_DEVICE_INFO_SERVICE = "deviceInfo";
     field public static final java.lang.String HSAE_VEHICLE_METER = "hsae.vehicle.meter";
+    field public static final java.lang.String HSAE_VEHICLE_POWER = "hsae.vehicle.power";
   }
 
   public final class VehicleManager {
@@ -326,38 +327,39 @@ package hsae.vehicle.meter {
   public final class MeterMetadata {
     ctor public MeterMetadata();
     method public static java.lang.String toString(int);
-    field public static final int ACCUMULATIVE_DRIVE_FUEL = 654311426; // 0x27000002
-    field public static final int ACCUMULATIVE_DRIVE_TIME = 1157627921; // 0x45000011
-    field public static final int AVERAGE_FUEL_CONS_A = 655364128; // 0x27101020
-    field public static final int AVERAGE_FUEL_CONS_B = 655364144; // 0x27101030
-    field public static final int AVERAGE_VEHICLE_SPEED_A = 654311696; // 0x27000110
-    field public static final int AVERAGE_VEHICLE_SPEED_B = 654311712; // 0x27000120
-    field public static final int CUMULATIVE_AVERAGE_FUEL = 655364112; // 0x27101010
-    field public static final int CUMULATIVE_FUEL_ARRAY = 1207963648; // 0x48001000
-    field public static final int DRIVE_TIME_A = 620757264; // 0x25000110
-    field public static final int DRIVE_TIME_B = 620757280; // 0x25000120
-    field public static final int DTE_STATUS = 654311690; // 0x2700010a
-    field public static final int FUEL_LEVEL = 655364097; // 0x27101001
-    field public static final int PARKING_BRAKE_ON = 587202561; // 0x23000001
-    field public static final int PERF_ODOMETER = 654311683; // 0x27000103
-    field public static final int PROJECTION_SIZE = 587202563; // 0x23000003
-    field public static final int RANGE_REMAINING = 654311682; // 0x27000102
-    field public static final int REMAINING_FUEL_PERCENT = 654311681; // 0x27000101
-    field public static final int ROW_1_CENTER = 587206657; // 0x23001001
-    field public static final int ROW_1_LEFT = 587206656; // 0x23001000
-    field public static final int ROW_1_RIGHT = 587206658; // 0x23001002
-    field public static final int ROW_2_CENTER = 587206660; // 0x23001004
-    field public static final int ROW_2_LEFT = 587206659; // 0x23001003
-    field public static final int ROW_2_RIGHT = 587206661; // 0x23001005
-    field public static final int ROW_3_CENTER = 587206663; // 0x23001007
-    field public static final int ROW_3_LEFT = 587206662; // 0x23001006
-    field public static final int ROW_3_RIGHT = 587206664; // 0x23001008
-    field public static final int SINGLE_DRIVE_FUEL = 654311425; // 0x27000001
-    field public static final int SINGLE_DRIVE_TIME = 1157627905; // 0x45000001
-    field public static final int TIME_FORMAT = 318767105; // 0x13000001
-    field public static final int TRIP_A = 1191182337; // 0x47000001
-    field public static final int TRIP_B = 1191182338; // 0x47000002
-    field public static final int UI_STYLE = 587202562; // 0x23000002
+    field public static final int ACCUMULATIVE_DRIVE_FUEL = 403112705; // 0x18070301
+    field public static final int ACCUMULATIVE_DRIVE_TIME = 402981632; // 0x18050300
+    field public static final int AVERAGE_FUEL_CONS_A = 403113480; // 0x18070608
+    field public static final int AVERAGE_FUEL_CONS_B = 403113481; // 0x18070609
+    field public static final int AVERAGE_VEHICLE_SPEED_A = 403113476; // 0x18070604
+    field public static final int AVERAGE_VEHICLE_SPEED_B = 403113477; // 0x18070605
+    field public static final int CUMULATIVE_AVERAGE_FUEL = 403113479; // 0x18070607
+    field public static final int CUMULATIVE_FUEL_ARRAY = 403179776; // 0x18080900
+    field public static final int DRIVE_TIME_A = 402982400; // 0x18050600
+    field public static final int DRIVE_TIME_B = 402982401; // 0x18050601
+    field public static final int DTE_STATUS = 403113475; // 0x18070603
+    field public static final int FIREWORKS_COLOR = 402851840; // 0x18030800
+    field public static final int FUEL_LEVEL = 403113478; // 0x18070606
+    field public static final int PARKING_BRAKE_ON = 402851584; // 0x18030700
+    field public static final int PERF_ODOMETER = 403113216; // 0x18070500
+    field public static final int PROJECTION_SIZE = 402850050; // 0x18030102
+    field public static final int RANGE_REMAINING = 403113474; // 0x18070602
+    field public static final int REMAINING_FUEL_PERCENT = 403112960; // 0x18070400
+    field public static final int ROW_1_CENTER = 402850305; // 0x18030201
+    field public static final int ROW_1_LEFT = 402850304; // 0x18030200
+    field public static final int ROW_1_RIGHT = 402850306; // 0x18030202
+    field public static final int ROW_2_CENTER = 402850321; // 0x18030211
+    field public static final int ROW_2_LEFT = 402850320; // 0x18030210
+    field public static final int ROW_2_RIGHT = 402850322; // 0x18030212
+    field public static final int ROW_3_CENTER = 402850337; // 0x18030221
+    field public static final int ROW_3_LEFT = 402850336; // 0x18030220
+    field public static final int ROW_3_RIGHT = 402850338; // 0x18030222
+    field public static final int SINGLE_DRIVE_FUEL = 403112707; // 0x18070303
+    field public static final int SINGLE_DRIVE_TIME = 402981634; // 0x18050302
+    field public static final int TIME_FORMAT = 402849793; // 0x18030001
+    field public static final int TRIP_A = 403113217; // 0x18070501
+    field public static final int TRIP_B = 403113218; // 0x18070502
+    field public static final int UI_STYLE = 402850049; // 0x18030101
   }
 
   public class VehicleMeter {
@@ -376,6 +378,28 @@ package hsae.vehicle.meter {
     method public abstract void onDoubleCallback(int, double);
     method public abstract void onStringArrayCallback(int, java.lang.String[]);
     method public abstract void onStringCallback(int, java.lang.String);
+  }
+
+}
+
+package hsae.vehicle.power {
+
+  public class PowerConstant {
+    ctor public PowerConstant();
+    method public static final java.lang.String toString(int);
+    field public static final int WIRELESS_CHARGE = 973275152; // 0x3a030010
+  }
+
+  public abstract interface PowerListener {
+    method public abstract void onDoubleCallback(int, double);
+  }
+
+  public class VehiclePowerManager {
+    method public double getPowerValue(int);
+    method public boolean registerListener(hsae.vehicle.power.PowerListener);
+    method public boolean registerListener(hsae.vehicle.power.PowerListener, android.content.IntentFilter);
+    method public boolean unregisterListener(hsae.vehicle.power.PowerListener);
+    method public boolean unregisterListener(hsae.vehicle.power.PowerListener, android.content.IntentFilter);
   }
 
 }
