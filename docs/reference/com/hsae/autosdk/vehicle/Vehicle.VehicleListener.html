@@ -1,0 +1,2267 @@
+<!DOCTYPE html>
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
+<title>
+
+  Vehicle.VehicleListener - Hsae_android_API_reference |
+
+Doclava
+
+</title>
+<link href="../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../../");
+</script>
+<script src="../../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../../navtree_data.js" type="text/javascript"></script>
+<script src="../../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:hidden;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="1" itemscope itemtype="http://schema.org/Article">
+
+<div id="header">
+    <div id="headerLeft">
+    
+       
+  <div id="api-level-toggle">
+    <label for="apiLevelCheckbox" class="disabled"
+    title="Select your target API level to dim unavailable APIs">API level: </label>
+    <select id="apiLevelSelector">
+      <!-- option elements added by buildApiLevelSelector() -->
+    </select>
+  </div>
+  <script>
+    var API_LEVELS = [ '1', '2' ];
+    buildApiLevelSelector();
+  </script>
+
+    
+    
+    </div>
+    <div id="headerRight">
+        
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="search developer docs" name="q"
+                      value="search developer docs"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td>
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+    </div><!-- headerRight -->
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../../../reference/packages.html"  >Package Index</a> |
+                <a href="../../../../../reference/classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-2">
+  <a href="../../../../../reference/com/hsae/autosdk/settings/package-summary.html">com.hsae.autosdk.settings</a></li>
+    <li class="selected api apilevel-1">
+  <a href="../../../../../reference/com/hsae/autosdk/vehicle/package-summary.html">com.hsae.autosdk.vehicle</a></li>
+    <li class="api apilevel-1">
+  <a href="../../../../../reference/com/hsae/autosdk_external/settings/package-summary.html">com.hsae.autosdk_external.settings</a></li>
+    <li class="api apilevel-1">
+  <a href="../../../../../reference/hsae/content/package-summary.html">hsae.content</a></li>
+    <li class="api apilevel-1">
+  <a href="../../../../../reference/hsae/vehicle/package-summary.html">hsae.vehicle</a></li>
+    <li class="api apilevel-1">
+  <a href="../../../../../reference/hsae/vehicle/ac/package-summary.html">hsae.vehicle.ac</a></li>
+    <li class="api apilevel-1">
+  <a href="../../../../../reference/hsae/vehicle/ivi/package-summary.html">hsae.vehicle.ivi</a></li>
+    <li class="api apilevel-1">
+  <a href="../../../../../reference/hsae/vehicle/meter/package-summary.html">hsae.vehicle.meter</a></li>
+    <li class="api apilevel-2">
+  <a href="../../../../../reference/hsae/vehicle/power/package-summary.html">hsae.vehicle.power</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="selected api apilevel-1"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html">Vehicle.VehicleListener</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.html">Vehicle</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/hsae/autosdk/vehicle/VehicleConst.html">VehicleConst</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/hsae/autosdk/vehicle/VehicleConst.Air.html">VehicleConst.Air</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/hsae/autosdk/vehicle/VehicleConst.Ill.html">VehicleConst.Ill</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/hsae/autosdk/vehicle/VehicleConst.Ill.Default.html">VehicleConst.Ill.Default</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/hsae/autosdk/vehicle/VehicleConst.TurnLight.html">VehicleConst.TurnLight</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/hsae/autosdk/vehicle/VehicleConst.VehicleData.html">VehicleConst.VehicleData</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/hsae/autosdk/vehicle/VehicleConst.VehicleMalfunction.html">VehicleConst.VehicleMalfunction</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/hsae/autosdk/vehicle/VehicleConst.VehicleType.html">VehicleConst.VehicleType</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Enums</h2>
+      <ul>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/hsae/autosdk/vehicle/VehicleConst.Air.AirMode.html">VehicleConst.Air.AirMode</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/hsae/autosdk/vehicle/VehicleConst.Air.WindDirection.html">VehicleConst.Air.WindDirection</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/hsae/autosdk/vehicle/VehicleConst.Air.WindSpeed.html">VehicleConst.Air.WindSpeed</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/hsae/autosdk/vehicle/VehicleConst.Ill.DayNight.html">VehicleConst.Ill.DayNight</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/hsae/autosdk/vehicle/VehicleConst.VehicleData.AutoType.html">VehicleConst.VehicleData.AutoType</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/hsae/autosdk/vehicle/VehicleConst.VehicleData.Gear.html">VehicleConst.VehicleData.Gear</a></li>
+          <li class="api apilevel-1"><a href="../../../../../reference/com/hsae/autosdk/vehicle/VehicleConst.VehicleEquipment.html">VehicleConst.VehicleEquipment</a></li>
+      </ul>
+    </li>
+              
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../../../reference/packages.html"  >Package Index</a> |
+            <a href="../../../../../reference/classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+
+<div class="sum-details-links">
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+    static 
+     
+    
+    interface
+<h1 itemprop="name">Vehicle.VehicleListener</h1>
+
+
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-1">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.hsae.autosdk.vehicle.Vehicle.VehicleListener</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p itemprop="articleBody">Vehicle information monitor</p>
+
+
+
+
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#keyLeaveCarRemind(boolean)">keyLeaveCarRemind</a></span>(boolean key)</nobr>
+        
+        <div class="jd-descrdiv">Description :
+ <br>
+      Vehicle key Leave remind
+<br>
+<p></div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onABSFaultResponse(int)">onABSFaultResponse</a></span>(int state)</nobr>
+        
+        <div class="jd-descrdiv">Response ABS fault state.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onAccStateResponse(boolean)">onAccStateResponse</a></span>(boolean on)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onAverageFuelConsumptionResponse(float)">onAverageFuelConsumptionResponse</a></span>(float value)</nobr>
+        
+        <div class="jd-descrdiv">Response average fuel consumption.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onBatteryPowerResponse(int)">onBatteryPowerResponse</a></span>(int percent)</nobr>
+        
+        <div class="jd-descrdiv">Response battery power percent.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onBrakeForceResponse(int)">onBrakeForceResponse</a></span>(int value)</nobr>
+        
+        <div class="jd-descrdiv">Response brake force value.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onDetectedEngineResponse(int)">onDetectedEngineResponse</a></span>(int state)</nobr>
+        
+        <div class="jd-descrdiv">Description :
+ <br>
+     Response detection engine state.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onDoorResponse(boolean,%20boolean,%20boolean,%20boolean,%20boolean)">onDoorResponse</a></span>(boolean frontLeft, boolean frontRight, boolean rearLeft, boolean rearRight, boolean back)</nobr>
+        
+        <div class="jd-descrdiv">Door Response</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onECM_48V_StatusResponse(int)">onECM_48V_StatusResponse</a></span>(int value)</nobr>
+        
+        <div class="jd-descrdiv">ECM_48V_Status</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onEPSDetectionResponse(int)">onEPSDetectionResponse</a></span>(int state)</nobr>
+        
+        <div class="jd-descrdiv">Response EPS detection state.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onEngineRotatingSpeedResponse(float)">onEngineRotatingSpeedResponse</a></span>(float value)</nobr>
+        
+        <div class="jd-descrdiv">Response engine rotating speed.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onHydraulicOilDetectedResponse(int)">onHydraulicOilDetectedResponse</a></span>(int state)</nobr>
+        
+        <div class="jd-descrdiv">Description :
+ <br>
+    Response hydraulic oil detected state.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onIgnResponse(boolean)">onIgnResponse</a></span>(boolean ign)</nobr>
+        
+        <div class="jd-descrdiv">IGN Signal information</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onIllStateResponse(boolean,%20boolean,%20boolean,%20boolean)">onIllStateResponse</a></span>(boolean beamLight, boolean highBeam, boolean rearLight, boolean frontFogLamps)</nobr>
+        
+        <div class="jd-descrdiv">Response ILL state.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onLaneWarningSensorInfoResponse(int)">onLaneWarningSensorInfoResponse</a></span>(int state)</nobr>
+        
+        <div class="jd-descrdiv">Response lane waring sensor information state.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onParkingResponse(int)">onParkingResponse</a></span>(int brakeStateFromMcu)</nobr>
+        
+        <div class="jd-descrdiv">Brake signal</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onRemainingOil(int,%20int,%20int,%20int)">onRemainingOil</a></span>(int oil, int avgFuel, int lowFuelwarning, int lowFuelwarning2)</nobr>
+        
+        <div class="jd-descrdiv">Response vehicle remaining oil.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onSafetyBeltResponse(int,%20int)">onSafetyBeltResponse</a></span>(int mainBelt, int subBelt)</nobr>
+        
+        <div class="jd-descrdiv">Safety belt information response.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onSteeringWheelAngleResponse(int)">onSteeringWheelAngleResponse</a></span>(int angle)</nobr>
+        
+        <div class="jd-descrdiv">Response steering wheel angle.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onStreeringWheelReationSpeed(int,%20int)">onStreeringWheelReationSpeed</a></span>(int swRotation, int swRotationSpeed)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onThrottleEffortsResponse(int)">onThrottleEffortsResponse</a></span>(int percent)</nobr>
+        
+        <div class="jd-descrdiv">Response throttle efforts percent.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onTotalMileageResponse(long)">onTotalMileageResponse</a></span>(long value)</nobr>
+        
+        <div class="jd-descrdiv">Response total mileage value.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onTpmsInfoResponse(int,%20int,%20int)">onTpmsInfoResponse</a></span>(int value, int which, int state)</nobr>
+        
+        <div class="jd-descrdiv">Tire pressure information feedback</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onTurnSignalsInfoResponse(int)">onTurnSignalsInfoResponse</a></span>(int value)</nobr>
+        
+        <div class="jd-descrdiv">Response turn signal information.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onVDCDetectionResponse(int)">onVDCDetectionResponse</a></span>(int state)</nobr>
+        
+        <div class="jd-descrdiv">Response VDC detection state.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onVehicleGearInfoResponse(int)">onVehicleGearInfoResponse</a></span>(int gear)</nobr>
+        
+        <div class="jd-descrdiv">Response vehicle gear information .</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onVehicleMileageInfoResponse(float)">onVehicleMileageInfoResponse</a></span>(float value)</nobr>
+        
+        <div class="jd-descrdiv">Response vehicle mileage information.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onVehicleSpeedInfoResponse(int)">onVehicleSpeedInfoResponse</a></span>(int speed)</nobr>
+        
+        <div class="jd-descrdiv">Response vehicle speed information.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onVehicleSpeedPulseInfoResponse(int)">onVehicleSpeedPulseInfoResponse</a></span>(int speedPulse)</nobr>
+        
+        <div class="jd-descrdiv">Response vehicle speed pulse information.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.VehicleListener.html#onWiperStateResponse(int)">onWiperStateResponse</a></span>(int state)</nobr>
+        
+        <div class="jd-descrdiv">Response wiper state information.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="keyLeaveCarRemind(boolean)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">keyLeaveCarRemind</span>
+      <span class="normal">(boolean key)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description :
+ <br>
+      Vehicle key Leave remind
+<br>
+<p></p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>key</code></td>
+        <td width="100%">
+          <code>boolean</code>:
+          true:　Vehicle key Leave remind， false: The key is still in the car
+</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onABSFaultResponse(int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onABSFaultResponse</span>
+      <span class="normal">(int state)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Response ABS fault state.</p>
+    
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>state</code></td>
+        <td width="100%">
+          <code>int</code>:
+          0 - ABS operational or vehicle not equipped(lamp off)
+              1 - ABS failure
+              2 - ABS operational, not programmed
+              3 - ABS in calibration</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onAccStateResponse(boolean)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onAccStateResponse</span>
+      <span class="normal">(boolean on)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p></p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>on</code></td>
+        <td width="100%">
+          <code>boolean</code>
+          <!-- no parameter comment --></td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onAverageFuelConsumptionResponse(float)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onAverageFuelConsumptionResponse</span>
+      <span class="normal">(float value)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Response average fuel consumption.</p>
+    
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>value</code></td>
+        <td width="100%">
+          <code>float</code>:
+          average fuel consumption - XXXX.xx</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onBatteryPowerResponse(int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onBatteryPowerResponse</span>
+      <span class="normal">(int percent)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Response battery power percent.</p>
+    
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>percent</code></td>
+        <td width="100%">
+          <code>int</code>:
+          1% ~ 100%
+                0% Can not be acquired</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onBrakeForceResponse(int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onBrakeForceResponse</span>
+      <span class="normal">(int value)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Response brake force value.</p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>value</code></td>
+        <td width="100%">
+          <code>int</code>:
+          brake force
+</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onDetectedEngineResponse(int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onDetectedEngineResponse</span>
+      <span class="normal">(int state)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description :
+ <br>
+     Response detection engine state.
+<br></p>
+    
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>state</code></td>
+        <td width="100%">
+          <code>int</code>:
+          0 - turn off
+              1 - turn on
+              2 - blinking
+              3 - invalid</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onDoorResponse(boolean,%20boolean,%20boolean,%20boolean,%20boolean)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onDoorResponse</span>
+      <span class="normal">(boolean frontLeft, boolean frontRight, boolean rearLeft, boolean rearRight, boolean back)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Door Response</p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>frontLeft</code></td>
+        <td width="100%">
+          <code>boolean</code>:
+          Front left door status  true-open; false-close</td>
+      </tr>
+      <tr>
+        <td><code>frontRight</code></td>
+        <td width="100%">
+          <code>boolean</code>:
+          Front right door status  true-open;false-close</td>
+      </tr>
+      <tr>
+        <td><code>rearLeft</code></td>
+        <td width="100%">
+          <code>boolean</code>:
+          Left rear door status  true-open; false-close</td>
+      </tr>
+      <tr>
+        <td><code>rearRight</code></td>
+        <td width="100%">
+          <code>boolean</code>:
+          Right rear door status true-open; false-close</td>
+      </tr>
+      <tr>
+        <td><code>back</code></td>
+        <td width="100%">
+          <code>boolean</code>:
+          Trunk door status   true-open; false-close
+</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onECM_48V_StatusResponse(int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onECM_48V_StatusResponse</span>
+      <span class="normal">(int value)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>ECM_48V_Status</p>
+    <table class="responsive">
+      <tr><th colspan=2>Returns</th></tr>
+      <tr>
+        <td><code>void</code></td>
+        <td width="100%">0x00 - Standstill;
+ 0x01 - ICE Drive(Engine Drive);
+ 0x02 - BSGAssist;
+ 0x03 - Recepuration;
+ 0x04 - Parallel Charge;
+ 0x05 - Idle Charge;
+ 0x06~7 - Reserved;
+</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onEPSDetectionResponse(int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onEPSDetectionResponse</span>
+      <span class="normal">(int state)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Response EPS detection state.</p>
+    
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>state</code></td>
+        <td width="100%">
+          <code>int</code>:
+          0 - no VDC(ESP) malfunction
+              1 - VDC(ESP)malfunction</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onEngineRotatingSpeedResponse(float)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onEngineRotatingSpeedResponse</span>
+      <span class="normal">(float value)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Response engine rotating speed.</p>
+    
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>value</code></td>
+        <td width="100%">
+          <code>float</code>:
+          XXXX.xx</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onHydraulicOilDetectedResponse(int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onHydraulicOilDetectedResponse</span>
+      <span class="normal">(int state)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description :
+ <br>
+    Response hydraulic oil detected state.
+<br></p>
+    
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>state</code></td>
+        <td width="100%">
+          <code>int</code>:
+          0 - normal
+              1 - eng oil warning</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onIgnResponse(boolean)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onIgnResponse</span>
+      <span class="normal">(boolean ign)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>IGN Signal information</p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>ign</code></td>
+        <td width="100%">
+          <code>boolean</code>:
+          Effective：true
+            invalid：false
+</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onIllStateResponse(boolean,%20boolean,%20boolean,%20boolean)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onIllStateResponse</span>
+      <span class="normal">(boolean beamLight, boolean highBeam, boolean rearLight, boolean frontFogLamps)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Response ILL state.</p>
+    
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>beamLight</code></td>
+        <td width="100%">
+          <code>boolean</code>:
+          true - turn on
+                      false - turn off</td>
+      </tr>
+      <tr>
+        <td><code>highBeam</code></td>
+        <td width="100%">
+          <code>boolean</code>:
+          true - turn on
+                      false - turn off</td>
+      </tr>
+      <tr>
+        <td><code>rearLight</code></td>
+        <td width="100%">
+          <code>boolean</code>:
+          true - turn on
+                      false - turn off</td>
+      </tr>
+      <tr>
+        <td><code>frontFogLamps</code></td>
+        <td width="100%">
+          <code>boolean</code>:
+          true - turn on
+                      false - turn off</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onLaneWarningSensorInfoResponse(int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onLaneWarningSensorInfoResponse</span>
+      <span class="normal">(int state)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Response lane waring sensor information state.</p>
+    
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>state</code></td>
+        <td width="100%">
+          <code>int</code>:
+          0 - Request to display setting OFF of LDW
+              1 - Request to display setting ON of LDW.</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onParkingResponse(int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onParkingResponse</span>
+      <span class="normal">(int brakeStateFromMcu)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Brake signal</p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>brakeStateFromMcu</code></td>
+        <td width="100%">
+          <code>int</code>:
+          0: brake off (not parking), 1: brake on (parking).
+</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onRemainingOil(int,%20int,%20int,%20int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onRemainingOil</span>
+      <span class="normal">(int oil, int avgFuel, int lowFuelwarning, int lowFuelwarning2)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Response vehicle remaining oil.</p>
+    
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>oil</code></td>
+        <td width="100%">
+          <code>int</code>:
+          Remaining oil (L)</td>
+      </tr>
+      <tr>
+        <td><code>avgFuel</code></td>
+        <td width="100%">
+          <code>int</code>:
+          Average fuel consumption per mile (km/L)</td>
+      </tr>
+      <tr>
+        <td><code>lowFuelwarning</code></td>
+        <td width="100%">
+          <code>int</code>:
+          Low fuel alarm   (0: off ; 1: on )</td>
+      </tr>
+      <tr>
+        <td><code>lowFuelwarning2</code></td>
+        <td width="100%">
+          <code>int</code>:
+          Low fuel alarm (level 2) (0: off ; 1: on )</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onSafetyBeltResponse(int,%20int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onSafetyBeltResponse</span>
+      <span class="normal">(int mainBelt, int subBelt)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Safety belt information response. 1: open, 0: close</p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>mainBelt</code></td>
+        <td width="100%">
+          <code>int</code>:
+          1: open, 0: close</td>
+      </tr>
+      <tr>
+        <td><code>subBelt</code></td>
+        <td width="100%">
+          <code>int</code>:
+          1: open, 0: close
+</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onSteeringWheelAngleResponse(int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onSteeringWheelAngleResponse</span>
+      <span class="normal">(int angle)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Response steering wheel angle.</p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>angle</code></td>
+        <td width="100%">
+          <code>int</code>:
+          wheel angle
+</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onStreeringWheelReationSpeed(int,%20int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onStreeringWheelReationSpeed</span>
+      <span class="normal">(int swRotation, int swRotationSpeed)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p></p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>swRotation</code></td>
+        <td width="100%">
+          <code>int</code>
+          <!-- no parameter comment --></td>
+      </tr>
+      <tr>
+        <td><code>swRotationSpeed</code></td>
+        <td width="100%">
+          <code>int</code>
+          <!-- no parameter comment --></td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onThrottleEffortsResponse(int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onThrottleEffortsResponse</span>
+      <span class="normal">(int percent)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Response throttle efforts percent.</p>
+    
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>percent</code></td>
+        <td width="100%">
+          <code>int</code>:
+          -from 0% ~ 100%</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onTotalMileageResponse(long)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onTotalMileageResponse</span>
+      <span class="normal">(long value)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Response total mileage value.</p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>value</code></td>
+        <td width="100%">
+          <code>long</code>:
+          - XXXXXXXX
+</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onTpmsInfoResponse(int,%20int,%20int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onTpmsInfoResponse</span>
+      <span class="normal">(int value, int which, int state)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Tire pressure information feedback</p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>value</code></td>
+        <td width="100%">
+          <code>int</code>:
+          Tire pressure value</td>
+      </tr>
+      <tr>
+        <td><code>which</code></td>
+        <td width="100%">
+          <code>int</code>:
+          0- Left front ; 1- Right front ; 2-Left rear ; 3-Right rear</td>
+      </tr>
+      <tr>
+        <td><code>state</code></td>
+        <td width="100%">
+          <code>int</code>:
+          0-normal ; 1-lower
+</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onTurnSignalsInfoResponse(int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onTurnSignalsInfoResponse</span>
+      <span class="normal">(int value)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Response turn signal information.</p>
+    
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>value</code></td>
+        <td width="100%">
+          <code>int</code>:
+          0x00 - OFF VehicleConst.TurnLight.OFF
+              0x01 - left VehicleConst.TurnLight.LEFT
+              0x02 - right VehicleConst.TurnLight.RIGHT
+              0x03 - Double flash VehicleConst.TurnLight.DOUBLE_FLASH</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onVDCDetectionResponse(int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onVDCDetectionResponse</span>
+      <span class="normal">(int state)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Response VDC detection state.</p>
+    
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>state</code></td>
+        <td width="100%">
+          <code>int</code>:
+          0 - normal
+              1 - failure
+              2 - failure
+              3 - diag mode</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onVehicleGearInfoResponse(int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onVehicleGearInfoResponse</span>
+      <span class="normal">(int gear)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Response vehicle gear information .</p>
+    
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>gear</code></td>
+        <td width="100%">
+          <code>int</code>:
+          OFF - VehicleConst.VehicleData.Gear.OFF.ordinal()
+             P - VehicleConst.VehicleData.Gear.P.ordinal()
+             R - VehicleConst.VehicleData.Gear.R.ordinal()
+             N - VehicleConst.VehicleData.Gear.N.ordinal()
+             D - VehicleConst.VehicleData.Gear.D.ordinal()
+             S - VehicleConst.VehicleData.Gear.S.ordinal()
+             L - VehicleConst.VehicleData.Gear.L.ordinal()
+             B - VehicleConst.VehicleData.Gear.B.ordinal()</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onVehicleMileageInfoResponse(float)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onVehicleMileageInfoResponse</span>
+      <span class="normal">(float value)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Response vehicle mileage information.</p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>value</code></td>
+        <td width="100%">
+          <code>float</code>:
+          - XXXX.xx
+</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onVehicleSpeedInfoResponse(int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onVehicleSpeedInfoResponse</span>
+      <span class="normal">(int speed)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Response vehicle speed information.</p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>speed</code></td>
+        <td width="100%">
+          <code>int</code>:
+          0-255KM/H
+</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onVehicleSpeedPulseInfoResponse(int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onVehicleSpeedPulseInfoResponse</span>
+      <span class="normal">(int speedPulse)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Response vehicle speed pulse information.</p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>speedPulse</code></td>
+        <td width="100%">
+          <code>int</code>:
+          speed pulse information
+</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onWiperStateResponse(int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onWiperStateResponse</span>
+      <span class="normal">(int state)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Response wiper state information.</p>
+    
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>state</code></td>
+        <td width="100%">
+          <code>int</code>:
+          00H - front wiper stopped;
+              01H - low speed active;
+              02H - high speed active;
+              03H - invalid</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+  <p>Posted by: HSAE</p>
+</div> <!-- end footer -->
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize developer-developer-docs.js */
+</script>
+
+
+</body>
+</html>
