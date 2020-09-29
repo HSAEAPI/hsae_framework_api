@@ -1,0 +1,2453 @@
+<!DOCTYPE html>
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
+<title>
+
+  MeterMetadata - Hsae_android_API_reference |
+
+Doclava
+
+</title>
+<link href="../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../");
+</script>
+<script src="../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../navtree_data.js" type="text/javascript"></script>
+<script src="../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:hidden;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="1" itemscope itemtype="http://schema.org/Article">
+
+<div id="header">
+    <div id="headerLeft">
+    
+       
+  <div id="api-level-toggle">
+    <label for="apiLevelCheckbox" class="disabled"
+    title="Select your target API level to dim unavailable APIs">API level: </label>
+    <select id="apiLevelSelector">
+      <!-- option elements added by buildApiLevelSelector() -->
+    </select>
+  </div>
+  <script>
+    var API_LEVELS = [ '1', '2' ];
+    buildApiLevelSelector();
+  </script>
+
+    
+    
+    </div>
+    <div id="headerRight">
+        
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="search developer docs" name="q"
+                      value="search developer docs"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td>
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+    </div><!-- headerRight -->
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../../reference/packages.html"  >Package Index</a> |
+                <a href="../../../../reference/classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-2">
+  <a href="../../../../reference/com/hsae/autosdk/settings/package-summary.html">com.hsae.autosdk.settings</a></li>
+    <li class="api apilevel-1">
+  <a href="../../../../reference/com/hsae/autosdk/vehicle/package-summary.html">com.hsae.autosdk.vehicle</a></li>
+    <li class="api apilevel-1">
+  <a href="../../../../reference/com/hsae/autosdk_external/settings/package-summary.html">com.hsae.autosdk_external.settings</a></li>
+    <li class="api apilevel-1">
+  <a href="../../../../reference/hsae/content/package-summary.html">hsae.content</a></li>
+    <li class="api apilevel-1">
+  <a href="../../../../reference/hsae/vehicle/package-summary.html">hsae.vehicle</a></li>
+    <li class="api apilevel-1">
+  <a href="../../../../reference/hsae/vehicle/ac/package-summary.html">hsae.vehicle.ac</a></li>
+    <li class="api apilevel-1">
+  <a href="../../../../reference/hsae/vehicle/ivi/package-summary.html">hsae.vehicle.ivi</a></li>
+    <li class="selected api apilevel-1">
+  <a href="../../../../reference/hsae/vehicle/meter/package-summary.html">hsae.vehicle.meter</a></li>
+    <li class="api apilevel-2">
+  <a href="../../../../reference/hsae/vehicle/power/package-summary.html">hsae.vehicle.power</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-1"><a href="../../../../reference/hsae/vehicle/meter/VehicleMeterListener.html">VehicleMeterListener</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="selected api apilevel-1"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html">MeterMetadata</a></li>
+          <li class="api apilevel-1"><a href="../../../../reference/hsae/vehicle/meter/VehicleMeter.html">VehicleMeter</a></li>
+      </ul>
+    </li>
+              
+              
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../../reference/packages.html"  >Package Index</a> |
+            <a href="../../../../reference/classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+Summary:
+
+
+
+
+
+  <a href="#constants">Constants</a>
+  
+
+
+
+
+
+  &#124; <a href="#pubctors">Ctors</a>
+  
+
+
+
+  &#124; <a href="#pubmethods">Methods</a>
+  
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+    final 
+    
+    class
+<h1 itemprop="name">MeterMetadata</h1>
+
+
+
+  
+    extends Object<br/>
+  
+  
+  
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-1">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Object</td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">hsae.vehicle.meter.MeterMetadata</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p itemprop="articleBody">This static constant field define vehicleMeter index, it's describe this index corresponding function value, type and access.</p>
+
+
+
+
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========== ENUM CONSTANT SUMMARY =========== -->
+<table id="constants" class="jd-sumtable"><tr><th colspan="12">Constants</th></tr>
+
+
+    
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#ACCUMULATIVE_DRIVE_FUEL">ACCUMULATIVE_DRIVE_FUEL</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen  meter accumulative drive fuel value.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#ACCUMULATIVE_DRIVE_TIME">ACCUMULATIVE_DRIVE_TIME</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get,set and listen accumulative drive time value.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#AVERAGE_FUEL_CONS_A">AVERAGE_FUEL_CONS_A</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen average fuel consumption A value.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#AVERAGE_FUEL_CONS_B">AVERAGE_FUEL_CONS_B</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen average fuel consumption B value.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#AVERAGE_VEHICLE_SPEED_A">AVERAGE_VEHICLE_SPEED_A</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen average vehicle speed A value.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#AVERAGE_VEHICLE_SPEED_B">AVERAGE_VEHICLE_SPEED_B</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen average vehicle speed B value.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#CUMULATIVE_AVERAGE_FUEL">CUMULATIVE_AVERAGE_FUEL</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen cumulative average fuel value.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#CUMULATIVE_FUEL_ARRAY">CUMULATIVE_FUEL_ARRAY</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get/set and listen fuel array data;  The array default length is 30 ; sample: {7.7,7.8,......,6.4}.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#DRIVE_TIME_A">DRIVE_TIME_A</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen  meter drive time A value.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#DRIVE_TIME_B">DRIVE_TIME_B</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen  meter drive time B value.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#DTE_STATUS">DTE_STATUS</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen  meter dte status.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-2" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#FIREWORKS_COLOR">FIREWORKS_COLOR</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen average fuel consumption B value.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#FUEL_LEVEL">FUEL_LEVEL</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen fuel level value.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#PARKING_BRAKE_ON">PARKING_BRAKE_ON</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen meter parking state.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#PERF_ODOMETER">PERF_ODOMETER</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen  meter odometer.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#PROJECTION_SIZE">PROJECTION_SIZE</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen DA projection size.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#RANGE_REMAINING">RANGE_REMAINING</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen  meter range remaining.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#REMAINING_FUEL_PERCENT">REMAINING_FUEL_PERCENT</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen  meter remaining fuel percent.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#ROW_1_CENTER">ROW_1_CENTER</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen ROW_1_CENTER.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#ROW_1_LEFT">ROW_1_LEFT</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen ROW_1_LEFT.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#ROW_1_RIGHT">ROW_1_RIGHT</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen ROW_1_RIGHT.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#ROW_2_CENTER">ROW_2_CENTER</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen ROW_2_CENTER.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#ROW_2_LEFT">ROW_2_LEFT</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen ROW_2_LEFT.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#ROW_2_RIGHT">ROW_2_RIGHT</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen ROW_2_RIGHT.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#ROW_3_CENTER">ROW_3_CENTER</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen  ROW_3_CENTER.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#ROW_3_LEFT">ROW_3_LEFT</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen  ROW_3_LEFT.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#ROW_3_RIGHT">ROW_3_RIGHT</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen  ROW_3_RIGHT.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#SINGLE_DRIVE_FUEL">SINGLE_DRIVE_FUEL</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen  meter single drive fuel value.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#SINGLE_DRIVE_TIME">SINGLE_DRIVE_TIME</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get,set and listen single drive time value.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#TIME_FORMAT">TIME_FORMAT</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is meter time format.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#TRIP_A">TRIP_A</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get,set and listen TRIP_A value.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#TRIP_B">TRIP_B</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get,set and listen TRIP_B value.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#UI_STYLE">UI_STYLE</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen DA ui style.</td>
+    </tr>
+    
+    
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            </nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#MeterMetadata()">MeterMetadata</a></span>()</nobr>
+        
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            static
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#toString(int)">toString</a></span>(int o)</nobr>
+        
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  java.lang.Object
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Object</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">clone</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">equals</span>(Object arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            final
+            
+            Class&lt;?&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            final
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notify</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            final
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyAll</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">toString</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            final
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            final
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            final
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>()</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- ========= ENUM CONSTANTS DETAIL ======== -->
+<h2>Constants</h2>
+
+
+
+
+<A NAME="ACCUMULATIVE_DRIVE_FUEL"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        ACCUMULATIVE_DRIVE_FUEL
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen  meter accumulative drive fuel value.
+ <br>Type : FLOAT;
+ <br>Access : READ
+ <br>Value : range ( 0~ FLOAT max ), unit : ml
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                403112705
+                (0x18070301)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="ACCUMULATIVE_DRIVE_TIME"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        ACCUMULATIVE_DRIVE_TIME
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get,set and listen accumulative drive time value.
+ <br>Type : INT64;
+ <br>Access : READ_WRITE
+ <br>Value : range ( 0~ max int64 unsigned value ), unit : sec
+ <br>Note :
+ <br>set this index is use to reset this accumulative drive time value;
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                402981632
+                (0x18050300)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="AVERAGE_FUEL_CONS_A"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        AVERAGE_FUEL_CONS_A
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen average fuel consumption A value.
+ <br>Type : FLOAT;
+ <br>Access : READ
+ <br>Value : range ( 0~ 20 ), unit : L/100km
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                403113480
+                (0x18070608)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="AVERAGE_FUEL_CONS_B"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        AVERAGE_FUEL_CONS_B
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen average fuel consumption B value.
+ <br>Type : FLOAT;
+ <br>Access : READ
+ <br>Value : range ( 0~ 20 ), unit : L/100km
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                403113481
+                (0x18070609)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="AVERAGE_VEHICLE_SPEED_A"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        AVERAGE_VEHICLE_SPEED_A
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen average vehicle speed A value.
+ <br>Type : FLOAT;
+ <br>Access : READ
+ <br>Value : range ( 0~ 255 ), unit : km/h
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                403113476
+                (0x18070604)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="AVERAGE_VEHICLE_SPEED_B"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        AVERAGE_VEHICLE_SPEED_B
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen average vehicle speed B value.
+ <br>Type : FLOAT;
+ <br>Access : READ
+ <br>Value : range ( 0~ 255 ), unit : km/h
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                403113477
+                (0x18070605)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="CUMULATIVE_AVERAGE_FUEL"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        CUMULATIVE_AVERAGE_FUEL
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen cumulative average fuel value.
+ <br>Type : FLOAT;
+ <br>Access : READ
+ <br>Value : range ( 0~ 20 ), unit : L/100km
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                403113479
+                (0x18070607)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="CUMULATIVE_FUEL_ARRAY"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        CUMULATIVE_FUEL_ARRAY
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get/set and listen fuel array data;  The array default length is 30 ; sample: {7.7,7.8,......,6.4}.
+ <br>Type : FLOAT_VEC[];
+ <br>Access : READ_WRITE
+ <br>Value : range ( 0~ 20 ), unit : L/100km;
+ <br>Note :
+ <br>array[0] is best average fuel value;
+ <br>array[1] is accumulative average fuel value;
+ <br>array[2~29] is every single drive time average fuel value;
+ <br>set this index is use to reset this array data;
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                403179776
+                (0x18080900)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="DRIVE_TIME_A"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        DRIVE_TIME_A
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen  meter drive time A value.
+ <br>Type : INT64;
+ <br>Access : READ
+ <br>Value : range ( 0~ max int64 unsigned value ), unit : sec
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                402982400
+                (0x18050600)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="DRIVE_TIME_B"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        DRIVE_TIME_B
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen  meter drive time B value.
+ <br>Type : INT64;
+ <br>Access : READ
+ <br>Value : range ( 0~ max int64 unsigned value), unit : sec
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                402982401
+                (0x18050601)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="DTE_STATUS"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        DTE_STATUS
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen  meter dte status.
+ <br>Type : INT32;
+ <br>Access : READ
+ <br>Value :
+ <br>0 : normal;
+ <br>1 : primary Warning;
+ <br>2 : Secondary Warning
+ <br>3 : just value become "---",app can proccess like normal
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                403113475
+                (0x18070603)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="FIREWORKS_COLOR"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        FIREWORKS_COLOR
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen average fuel consumption B value.
+ <br>Type : INT32;
+ <br>Access : READ_WRITE
+ <br>Value :
+ <br>0 : red fireworks.
+ <br>1 : purple fireworks.
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                402851840
+                (0x18030800)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="FUEL_LEVEL"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        FUEL_LEVEL
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen fuel level value.
+ <br>Type : FLOAT;
+ <br>Access : READ
+ <br>Value : range ( 0~ 99.9 ), unit : L
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                403113478
+                (0x18070606)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="PARKING_BRAKE_ON"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        PARKING_BRAKE_ON
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen meter parking state.
+ <br>Type : INT32;
+ <br>Access : READ
+ <br>Value :
+ <br>0: brake on;
+ <br>1:brake off;
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                402851584
+                (0x18030700)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="PERF_ODOMETER"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        PERF_ODOMETER
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen  meter odometer.
+ <br>Type : FLOAT;
+ <br>Access : READ
+ <br>Value : range ( 0~ 1,000,000 ), unit : km
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                403113216
+                (0x18070500)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="PROJECTION_SIZE"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        PROJECTION_SIZE
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen DA projection size.
+ <br>Type : INT32;
+ <br>Access : READ
+ <br>Value :
+ <br>0x01, Projection Screen size samll;
+ <br>0x02, Projection Screen size middle;
+ <br>0x03, Projection Screen size large;
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                402850050
+                (0x18030102)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="RANGE_REMAINING"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        RANGE_REMAINING
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen  meter range remaining.
+ <br>Type : FLOAT;
+ <br>Access : READ
+ <br>Value : range ( 0~ 1,000,000 ), unit : km
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                403113474
+                (0x18070602)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="REMAINING_FUEL_PERCENT"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        REMAINING_FUEL_PERCENT
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen  meter remaining fuel percent.
+ <br>Type : FLOAT;
+ <br>Access : READ
+ <br>Value : range ( 0~ 100 ), unit : %
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                403112960
+                (0x18070400)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="ROW_1_CENTER"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        ROW_1_CENTER
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen ROW_1_CENTER.
+ <br>Type : INT32;
+ <br>Access : READ
+ <br>Value : not define;
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                402850305
+                (0x18030201)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="ROW_1_LEFT"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        ROW_1_LEFT
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen ROW_1_LEFT.
+ <br>Type : INT32;
+ <br>Access : READ
+ <br>Value : not define;
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                402850304
+                (0x18030200)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="ROW_1_RIGHT"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        ROW_1_RIGHT
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen ROW_1_RIGHT.
+ <br>Type : INT32;
+ <br>Access : READ
+ <br>Value : not define;
+ <br>sample:
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                402850306
+                (0x18030202)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="ROW_2_CENTER"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        ROW_2_CENTER
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen ROW_2_CENTER.
+ <br>Type : INT32;
+ <br>Access : READ
+ <br>Value : not define;
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                402850321
+                (0x18030211)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="ROW_2_LEFT"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        ROW_2_LEFT
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen ROW_2_LEFT.
+ <br>Type : INT32;
+ <br>Access : READ
+ <br>Value : not define;
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                402850320
+                (0x18030210)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="ROW_2_RIGHT"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        ROW_2_RIGHT
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen ROW_2_RIGHT.
+ <br>Type : INT32;
+ <br>Access : READ
+ <br>Value : not define;
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                402850322
+                (0x18030212)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="ROW_3_CENTER"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        ROW_3_CENTER
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen  ROW_3_CENTER.
+ <br>Type : INT32;
+ <br>Access : READ
+ <br>Value : not define;
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                402850337
+                (0x18030221)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="ROW_3_LEFT"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        ROW_3_LEFT
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen  ROW_3_LEFT.
+ <br>Type : INT32;
+ <br>Access : READ
+ <br>Value : not define;
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                402850336
+                (0x18030220)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="ROW_3_RIGHT"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        ROW_3_RIGHT
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen  ROW_3_RIGHT.
+ <br>Type : INT32;
+ <br>Access : READ
+ <br>Value : not define;
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                402850338
+                (0x18030222)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SINGLE_DRIVE_FUEL"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SINGLE_DRIVE_FUEL
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen  meter single drive fuel value.
+ <br>Type : FLOAT;
+ <br>Access : READ
+ <br>Value : range ( 0~ FLOAT max ), unit : ml
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                403112707
+                (0x18070303)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SINGLE_DRIVE_TIME"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        SINGLE_DRIVE_TIME
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get,set and listen single drive time value.
+ <br>Type : INT64;
+ <br>Access : READ_WRITE
+ <br>Value : range ( 0~ max int64 unsigned value ), unit : sec
+ <br>Note :
+ <br>set this index is use to reset this single drive time value;
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                402981634
+                (0x18050302)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="TIME_FORMAT"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        TIME_FORMAT
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is meter time format.
+ <br>Type : INT32;
+ <br>Access : NONE
+ <br>Value : 12/24 ;
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                402849793
+                (0x18030001)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="TRIP_A"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        TRIP_A
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get,set and listen TRIP_A value.
+ <br>Type : FLOAT;
+ <br>Access : READ_WRITE
+ <br>Value : range ( 0~ 1,000,000 ), unit : km
+ <br>Note :
+ <br>set this index is use to reset this TRIP_A value;
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                403113217
+                (0x18070501)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="TRIP_B"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        TRIP_B
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get,set and listen TRIP_B value.
+ <br>Type : FLOAT;
+ <br>Access : READ_WRITE
+ <br>Value : range ( 0~ 1,000,000 ), unit : km
+ <br>Note :
+ <br>set this index is use to reset this TRIP_B value;
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                403113218
+                (0x18070502)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="UI_STYLE"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        UI_STYLE
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to get and listen DA ui style.
+ <br>Type : INT32;
+ <br>Access : READ
+ <br>Value :
+ <br>    0x01, DA UI style is Modern;
+ <br>    0x02, DA UI style is Technology;
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                402850049
+                (0x18030101)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<h2>Public Constructors</h2>
+
+
+
+<A NAME="MeterMetadata()"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        
+        
+        
+        
+        
+      </span>
+      <span class="sympad">MeterMetadata</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p></p>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="toString(int)"></A>
+
+<div class="jd-details api apilevel-1"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        
+        
+        static
+        
+        String
+      </span>
+      <span class="sympad">toString</span>
+      <span class="normal">(int o)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p></p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>o</code></td>
+        <td width="100%">
+          <code>int</code>
+          <!-- no parameter comment --></td>
+      </tr>
+    </table>
+    <table class="responsive">
+      <tr><th colspan=2>Returns</th></tr>
+      <tr>
+        <td><code>String</code></td>
+        <td width="100%"><!-- no returns description in source --></td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+  <p>Posted by: HSAE</p>
+</div> <!-- end footer -->
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize developer-developer-docs.js */
+</script>
+
+
+</body>
+</html>
