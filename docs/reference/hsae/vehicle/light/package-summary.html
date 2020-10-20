@@ -10,7 +10,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
 <title>
 
-  VehicleACListener - Hsae_android_API_reference |
+  hsae.vehicle.light - Hsae_android_API_reference |
 
 Doclava
 
@@ -39,7 +39,7 @@ Doclava
 </noscript>
 </head>
 
-<body class="1" itemscope itemtype="http://schema.org/Article">
+<body class="2">
 
 <div id="header">
     <div id="headerLeft">
@@ -118,11 +118,11 @@ Doclava
   <a href="../../../../reference/hsae/content/package-summary.html">hsae.content</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/package-summary.html">hsae.vehicle</a></li>
-    <li class="selected api apilevel-1">
+    <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/ac/package-summary.html">hsae.vehicle.ac</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/ivi/package-summary.html">hsae.vehicle.ivi</a></li>
-    <li class="api apilevel-2">
+    <li class="selected api apilevel-2">
   <a href="../../../../reference/hsae/vehicle/light/package-summary.html">hsae.vehicle.light</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/meter/package-summary.html">hsae.vehicle.meter</a></li>
@@ -136,14 +136,14 @@ Doclava
               
     <li><h2>Interfaces</h2>
       <ul>
-          <li class="selected api apilevel-1"><a href="../../../../reference/hsae/vehicle/ac/VehicleACListener.html">VehicleACListener</a></li>
+        <li class="api apilevel-2"><a href="../../../../reference/hsae/vehicle/light/LightListener.html">LightListener</a></li>
       </ul>
     </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-1"><a href="../../../../reference/hsae/vehicle/ac/VehicleACConstant.html">VehicleACConstant</a></li>
-          <li class="api apilevel-1"><a href="../../../../reference/hsae/vehicle/ac/VehicleAirControl.html">VehicleAirControl</a></li>
+        <li class="api apilevel-2"><a href="../../../../reference/hsae/vehicle/light/LightData.html">LightData</a></li>
+        <li class="api apilevel-2"><a href="../../../../reference/hsae/vehicle/light/VehicleLight.html">VehicleLight</a></li>
       </ul>
     </li>
               
@@ -183,260 +183,100 @@ Doclava
 <div class="g-unit" id="doc-content">
 
 <div id="api-info-block">
-
-
-
-
-<div class="sum-details-links">
-
-</div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a>
   
   
 
 </div>
-</div><!-- end api-info-block -->
-
-
-<!-- ======== START OF CLASS DATA ======== -->
+</div>
 
 <div id="jd-header">
-    public
-     
-     
-    
-    interface
-<h1 itemprop="name">VehicleACListener</h1>
-
-
-
-  
-  
-  
-
-
+  package
+  <h1>hsae.vehicle.light</h1>
 </div><!-- end header -->
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
-<table class="jd-inheritance-table">
+<div id="jd-content" class="api apilevel-2">
 
 
-    <tr>
-         	
-        <td colspan="1" class="jd-inheritance-class-cell">hsae.vehicle.ac.VehicleACListener</td>
-    </tr>
+  <div class="jd-descr">
+    <p>This package provides the class of data operation related to VehicleLight API for android
+    developer, the developer use these vehicle API to develop related programs.</p>
+
+<p>The <code><a href="../../../../reference/hsae/vehicle/light/LightData.html">LightData</a></code> class is about vehicle light static constant fields
+    of VehicleLight index . The class describes VehicleLight index corresponding function value,
+    type and access.</p>
+
+<p>The <code><a href="../../../../reference/hsae/vehicle/light/LightListener.html">LightListener</a></code> is an interface that can provide vehicle light
+    callback method.The development should implements this interface, and register it on
+    VehicleLight register method. VehicleLight has an observe to manage multi-client
+    callback.</p>
+
+<p>The <code><a href="../../../../reference/hsae/vehicle/light/VehicleLight.html">VehicleLight</a></code> class is implement VehicleLight sub service
+    <code><a href="../../../../reference/hsae/vehicle/VMSConstant.html#HSAE_LIGHT_SERVICE">hsae.vehicle.VMSConstant.HSAE_LIGHT_SERVICE</a></code>. The VehicleLight instance is create
+    by VehicleManager, we use VehicleManager to make sure VehicleLight only construct once
+    for each client apk. This class provide two kind method, get/set value method and
+    register/unregister <code><a href="../../../../reference/hsae/vehicle/light/LightListener.html">LightListener</a></code> method.</p>
+
+
+  </div>
+
+
+
+
+
+  
+    <h2>Interfaces</h2>
+    <div class="jd-sumtable">
     
-
-</table>
-
-
-
-
-
-
-
-<div class="jd-descr">
-
-
-<h2>Class Overview</h2>
-<p itemprop="articleBody">Description :<br>
- A callback to monitor changes in air conditioner status .
- <p></p>
-
-
-
-
-
-
-</div><!-- jd-descr -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="jd-descr">
-
-
-<h2>Summary</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ========== METHOD SUMMARY =========== -->
-<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
-
-
-
-	 
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            void</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/hsae/vehicle/ac/VehicleACListener.html#onDoubleResponse(int,%20double)">onDoubleResponse</a></span>(int index, double value)</nobr>
-        
-        <div class="jd-descrdiv">Description :<br>
- invoked when air conditioning status change.</div>
-  
-  </td></tr>
-
-
-
-</table>
-
-
-
-
-
-
-
-</div><!-- jd-descr (summary) -->
-
-<!-- Details -->
-
-
-
-
-
-
-
-
-<!-- XML Attributes -->
-
-
-<!-- Enum Values -->
-
-
-<!-- Constants -->
-
-
-<!-- Fields -->
-
-
-<!-- Public ctors -->
-
-
-
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<!-- Protected ctors -->
-
-
-
-<!-- ========= METHOD DETAIL ======== -->
-<!-- Public methdos -->
-
-<h2>Public Methods</h2>
-
-
-
-<A NAME="onDoubleResponse(int,%20double)"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public
-        abstract
-        
-        
-        
-        void
-      </span>
-      <span class="sympad">onDoubleResponse</span>
-      <span class="normal">(int index, double value)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <p>Description :<br>
- invoked when air conditioning status change.</p>
-    <table class="responsive">
-    <tr><th colspan=2>Parameters</th></tr>
-      <tr>
-        <td><code>index</code></td>
-        <td width="100%">
-          <code>int</code>:
-          defined in <code><a href="../../../../reference/hsae/vehicle/ac/VehicleACConstant.html">VehicleACConstant</a></code></td>
-      </tr>
-      <tr>
-        <td><code>value</code></td>
-        <td width="100%">
-          <code>double</code>:
-          the current status of the designated module of air conditioner
-</td>
-      </tr>
-    </table>
-
+  <table class="jd-sumtable-expando">
+        <tr class="alt-color api apilevel-2" >
+              <td><a href="../../../../reference/hsae/vehicle/light/LightListener.html">LightListener</a></td>
+              <td width="100%">Description : the LightListener interface,client developer should implements this interface;
+ Use VehicleLight public boolean registerListener(LightListener listener) method can register&nbsp;</td>
+          </tr>
+  </table>
     </div>
-</div>
+  
 
 
+  
+    <h2>Classes</h2>
+    <div class="jd-sumtable">
+    
+  <table class="jd-sumtable-expando">
+        <tr class="alt-color api apilevel-2" >
+              <td><a href="../../../../reference/hsae/vehicle/light/LightData.html">LightData</a></td>
+              <td width="100%">This static constant field define VehicleLight index, it's describe this index corresponding function value, type and access.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-2" >
+              <td><a href="../../../../reference/hsae/vehicle/light/VehicleLight.html">VehicleLight</a></td>
+              <td width="100%">The VehicleLight class implement VehicleManager sub service <code><a href="../../../../reference/hsae/vehicle/VMSConstant.html#HSAE_LIGHT_SERVICE">hsae.vehicle.VMSConstant.HSAE_LIGHT_SERVICE</a></code>.&nbsp;</td>
+          </tr>
+  </table>
+    </div>
+  
 
 
-
-<!-- ========= METHOD DETAIL ======== -->
-
+  
 
 
-<!-- ========= END OF CLASS DATA ========= -->
-<A NAME="navbar_top"></A>
+  
+
+
+  
+
 
 <div id="footer">
   <p><img src="https://s1.ax1x.com/2020/09/30/0nye8f.png" alt="0nye8f.png" border="0" /></p>
   <p>Posted by: HSAE</p>
 </div> <!-- end footer -->
 
-</div> <!-- jd-content -->
-
-</div><!-- end doc-content -->
+</div><!-- end jd-content -->
+</div><!-- doc-content -->
 
 </div> <!-- end body-content --> 
 

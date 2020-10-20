@@ -10,7 +10,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
 <title>
 
-  HsaeDeviceInfo - Hsae_android_API_reference |
+  VehicleLight - Hsae_android_API_reference |
 
 Doclava
 
@@ -39,7 +39,7 @@ Doclava
 </noscript>
 </head>
 
-<body class="1" itemscope itemtype="http://schema.org/Article">
+<body class="2" itemscope itemtype="http://schema.org/Article">
 
 <div id="header">
     <div id="headerLeft">
@@ -120,9 +120,9 @@ Doclava
   <a href="../../../../reference/hsae/vehicle/package-summary.html">hsae.vehicle</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/ac/package-summary.html">hsae.vehicle.ac</a></li>
-    <li class="selected api apilevel-1">
+    <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/ivi/package-summary.html">hsae.vehicle.ivi</a></li>
-    <li class="api apilevel-2">
+    <li class="selected api apilevel-2">
   <a href="../../../../reference/hsae/vehicle/light/package-summary.html">hsae.vehicle.light</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/meter/package-summary.html">hsae.vehicle.meter</a></li>
@@ -136,13 +136,14 @@ Doclava
               
     <li><h2>Interfaces</h2>
       <ul>
-          <li class="api apilevel-1"><a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a></li>
+          <li class="api apilevel-2"><a href="../../../../reference/hsae/vehicle/light/LightListener.html">LightListener</a></li>
       </ul>
     </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="selected api apilevel-1"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html">HsaeDeviceInfo</a></li>
+          <li class="api apilevel-2"><a href="../../../../reference/hsae/vehicle/light/LightData.html">LightData</a></li>
+          <li class="selected api apilevel-2"><a href="../../../../reference/hsae/vehicle/light/VehicleLight.html">VehicleLight</a></li>
       </ul>
     </li>
               
@@ -201,16 +202,13 @@ Summary:
 
 
 
-  <a href="#constants">Constants</a>
-  
 
 
 
 
 
 
-
-  &#124; <a href="#pubmethods">Methods</a>
+  <a href="#pubmethods">Methods</a>
   
 
 
@@ -222,7 +220,7 @@ Summary:
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a>
   
   
 
@@ -238,7 +236,7 @@ Summary:
      
     
     class
-<h1 itemprop="name">HsaeDeviceInfo</h1>
+<h1 itemprop="name">VehicleLight</h1>
 
 
 
@@ -257,7 +255,7 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
+<div id="jd-content" class="api apilevel-2">
 <table class="jd-inheritance-table">
 
 
@@ -271,7 +269,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">hsae.vehicle.ivi.HsaeDeviceInfo</td>
+        <td colspan="1" class="jd-inheritance-class-cell">hsae.vehicle.light.VehicleLight</td>
     </tr>
     
 
@@ -287,14 +285,16 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">The HsaeDeviceInfo class implement VehicleManager sub service <code><a href="../../../../reference/hsae/vehicle/VMSConstant.html#HSAE_DEVICE_INFO_SERVICE">hsae.vehicle.VMSConstant.HSAE_DEVICE_INFO_SERVICE</a></code>.
- <br> HsaeDeviceInfo provide get/set and register/unregister method for apk.
-
- <br> all development can get HsaeDeviceInfo service by this way:
+<p itemprop="articleBody">The VehicleLight class implement VehicleManager sub service <code><a href="../../../../reference/hsae/vehicle/VMSConstant.html#HSAE_LIGHT_SERVICE">hsae.vehicle.VMSConstant.HSAE_LIGHT_SERVICE</a></code>.
+ <br> The VehicleLight instance is create by VehicleManager, we use VehicleManager to make sure VehicleLight only construct once for each client apk
+ <p>
+ This class provide two kind method, get/set value method and register/unregister <code><a href="../../../../reference/hsae/vehicle/light/LightListener.html">LightListener</a></code> method.
+ <br> all development can get this sub service by this way:
  <p> Example:
  <pre>
      VehicleManager vehicleManager = (VehicleManager) getSystemService(HsaeContext.VEHICLE);
-     HsaeDeviceInfo hsaeDeviceInfo = (HsaeDeviceInfo) vehicleManager.getVehicleService(VMSConstant.HSAE_DEVICE_INFO_SERVICE);</p>
+     VehicleLight vehicleLight = (VehicleLight) vehicleManager.getVehicleService(VMSConstant.HSAE_LIGHT_SERVICE);
+     double doubleValue = vehicleLight.setLightValue(LightData.ATMOSPHERE_LAMP_HOLIDAY,1);</p>
 
 
 
@@ -335,23 +335,6 @@ Summary:
 
 
 
-<!-- =========== ENUM CONSTANT SUMMARY =========== -->
-<table id="constants" class="jd-sumtable"><tr><th colspan="12">Constants</th></tr>
-
-
-    
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-typecol">String</td>
-        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#MEDIA_STATE_TABLE">MEDIA_STATE_TABLE</a></td>
-        <td class="jd-descrcol" width="100%">device info table define
-</td>
-    </tr>
-    
-    
-
-</table>
-
-
 
 
 
@@ -372,27 +355,25 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-2" >
         <td class="jd-typecol"><nobr>
             
             
             
             
             
-            String</nobr>
+            double</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#getDeviceInfo(java.lang.String,%20java.lang.String)">getDeviceInfo</a></span>(String tableName, String key)</nobr>
+        <span class="sympad"><a href="../../../../reference/hsae/vehicle/light/VehicleLight.html#getLightValue(int)">getLightValue</a></span>(int index)</nobr>
         
-        <div class="jd-descrdiv">Description :<br>
- Use to getDeviceInfo<br>
- <p></div>
+        <div class="jd-descrdiv">Description : this method is use to get vehicle Light value.</div>
   
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-2" >
         <td class="jd-typecol"><nobr>
             
             
@@ -402,17 +383,15 @@ Summary:
             boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#registerListener(hsae.vehicle.ivi.DeviceInfoListener,%20android.content.IntentFilter)">registerListener</a></span>(<a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a> listener, IntentFilter filter)</nobr>
+        <span class="sympad"><a href="../../../../reference/hsae/vehicle/light/VehicleLight.html#registerListener(hsae.vehicle.light.LightListener)">registerListener</a></span>(<a href="../../../../reference/hsae/vehicle/light/LightListener.html">LightListener</a> listener)</nobr>
         
-        <div class="jd-descrdiv">Description :<br>
- Use to registerListener<br>
- <p></div>
+        <div class="jd-descrdiv">Description :register LightListener without filter.</div>
   
   </td></tr>
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-2" >
         <td class="jd-typecol"><nobr>
             
             
@@ -422,57 +401,15 @@ Summary:
             boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#registerListener(hsae.vehicle.ivi.DeviceInfoListener)">registerListener</a></span>(<a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a> listener)</nobr>
+        <span class="sympad"><a href="../../../../reference/hsae/vehicle/light/VehicleLight.html#setLightValue(int,%20double)">setLightValue</a></span>(int index, double value)</nobr>
         
-        <div class="jd-descrdiv">Description :<br>
- Use to registerListener<br>
- <p></div>
+        <div class="jd-descrdiv">Description : this method is use to set vehicle Light value.</div>
   
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-1" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            void</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#setDeviceInfo(java.lang.String,%20java.lang.String,%20java.lang.String)">setDeviceInfo</a></span>(String tableName, String key, String value)</nobr>
-        
-        <div class="jd-descrdiv">Description :<br>
- Use to setDeviceInfo<br>
- <p></div>
-  
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            void</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#setPublicDeviceInfo(java.lang.String,%20java.lang.String,%20java.lang.String)">setPublicDeviceInfo</a></span>(String tableName, String key, String value)</nobr>
-        
-        <div class="jd-descrdiv">Description :<br>
- Use to setPublicDeviceInfo<br>
- <p></div>
-  
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-2" >
         <td class="jd-typecol"><nobr>
             
             
@@ -482,31 +419,9 @@ Summary:
             boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#unregisterListener(hsae.vehicle.ivi.DeviceInfoListener,%20android.content.IntentFilter)">unregisterListener</a></span>(<a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a> listener, IntentFilter filter)</nobr>
+        <span class="sympad"><a href="../../../../reference/hsae/vehicle/light/VehicleLight.html#unregisterListener(hsae.vehicle.light.LightListener)">unregisterListener</a></span>(<a href="../../../../reference/hsae/vehicle/light/LightListener.html">LightListener</a> listener)</nobr>
         
-        <div class="jd-descrdiv">Description :<br>
- Use to unregisterListener<br>
- <p></div>
-  
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            boolean</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#unregisterListener(hsae.vehicle.ivi.DeviceInfoListener)">unregisterListener</a></span>(<a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a> listener)</nobr>
-        
-        <div class="jd-descrdiv">Description :<br>
- Use to unregisterListener<br>
- <p></div>
+        <div class="jd-descrdiv">Description :unregister LightListener without filter.</div>
   
   </td></tr>
 
@@ -750,52 +665,6 @@ From class
 <!-- Constants -->
 
 
-<!-- ========= ENUM CONSTANTS DETAIL ======== -->
-<h2>Constants</h2>
-
-
-
-
-<A NAME="MEDIA_STATE_TABLE"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        String
-      </span>
-        MEDIA_STATE_TABLE
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <p>device info table define
-</p>
-
-    
-        <div class="jd-tagdata">
-        <span class="jd-tagtitle">Constant Value: </span>
-        <span>
-            
-                "hsae.vehicle.media.state"
-            
-        </span>
-        </div>
-    
-    </div>
-</div>
-
-
-
-
 <!-- Fields -->
 
 
@@ -815,9 +684,9 @@ From class
 
 
 
-<A NAME="getDeviceInfo(java.lang.String,%20java.lang.String)"></A>
+<A NAME="getLightValue(int)"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-2"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public
@@ -825,103 +694,40 @@ From class
         
         
         
-        String
+        double
       </span>
-      <span class="sympad">getDeviceInfo</span>
-      <span class="normal">(String tableName, String key)</span>
+      <span class="sympad">getLightValue</span>
+      <span class="normal">(int index)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <p>Description :<br>
- Use to getDeviceInfo<br>
- <p></p>
+  <p>Description : this method is use to get vehicle Light value. <code><a href="../../../../reference/hsae/vehicle/light/LightData.html">LightData</a></code> constant fields is defined Light value field.</p>
     <table class="responsive">
     <tr><th colspan=2>Parameters</th></tr>
       <tr>
-        <td><code>tableName</code></td>
+        <td><code>index</code></td>
         <td width="100%">
-          <code>String</code>:
-          the value tableName , refer to <code><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#MEDIA_STATE_TABLE">MEDIA_STATE_TABLE</a></code></td>
-      </tr>
-      <tr>
-        <td><code>key</code></td>
-        <td width="100%">
-          <code>String</code>:
-          The value key, The key include source key package name</td>
+          <code>int</code>:
+          The data index, refers to  <code><a href="../../../../reference/hsae/vehicle/light/LightData.html">LightData</a></code></td>
       </tr>
     </table>
     <table class="responsive">
       <tr><th colspan=2>Returns</th></tr>
       <tr>
-        <td><code>String</code></td>
-        <td width="100%">The data return by String.
-</td>
-      </tr>
-    </table>
-
-    </div>
-</div>
-
-
-<A NAME="registerListener(hsae.vehicle.ivi.DeviceInfoListener,%20android.content.IntentFilter)"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public
-        
-        
-        
-        
-        boolean
-      </span>
-      <span class="sympad">registerListener</span>
-      <span class="normal">(<a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a> listener, IntentFilter filter)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <p>Description :<br>
- Use to registerListener<br>
- <p></p>
-    <table class="responsive">
-    <tr><th colspan=2>Parameters</th></tr>
-      <tr>
-        <td><code>listener</code></td>
-        <td width="100%">
-          <code>DeviceInfoListener</code>:
-          The callback object <code><a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a></code></td>
-      </tr>
-      <tr>
-        <td><code>filter</code></td>
-        <td width="100%">
-          <code>IntentFilter</code>:
-          IntentFilter  <code><a href="../../../../reference/android/content/IntentFilter.html">IntentFilter</a></code></td>
-      </tr>
-    </table>
-    <table class="responsive">
-      <tr><th colspan=2>Returns</th></tr>
-      <tr>
-        <td><code>boolean</code></td>
-        <td width="100%">true: register is success ; false:register is failed</td>
+        <td><code>double</code></td>
+        <td width="100%">The data or -1 if the index is not exist or not allow to access , the detail value refers to <code><a href="../../../../reference/hsae/vehicle/light/LightData.html">LightData</a></code> fields value define;</td>
       </tr>
     </table>
   <div>
       <p><b>See also:</b></p>
-      <ul class="nolist"><li><code><a href="../../../../reference/android/content/IntentFilter.html">IntentFilter</a></code></li>
+      <ul class="nolist"><li><code><a href="../../../../reference/hsae/vehicle/light/LightData.html">LightData</a></code></li>
       </ul>
   </div>
 
@@ -929,9 +735,9 @@ From class
 </div>
 
 
-<A NAME="registerListener(hsae.vehicle.ivi.DeviceInfoListener)"></A>
+<A NAME="registerListener(hsae.vehicle.light.LightListener)"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-2"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public
@@ -942,27 +748,26 @@ From class
         boolean
       </span>
       <span class="sympad">registerListener</span>
-      <span class="normal">(<a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a> listener)</span>
+      <span class="normal">(<a href="../../../../reference/hsae/vehicle/light/LightListener.html">LightListener</a> listener)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <p>Description :<br>
- Use to registerListener<br>
+  <p>Description :register LightListener without filter.<br>
  <p></p>
     <table class="responsive">
     <tr><th colspan=2>Parameters</th></tr>
       <tr>
         <td><code>listener</code></td>
         <td width="100%">
-          <code>DeviceInfoListener</code>:
-          The callback object <code><a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a></code></td>
+          <code>LightListener</code>:
+          The callback object <code><a href="../../../../reference/hsae/vehicle/light/LightListener.html">LightListener</a></code></td>
       </tr>
     </table>
     <table class="responsive">
@@ -970,11 +775,6 @@ From class
       <tr>
         <td><code>boolean</code></td>
         <td width="100%">true: register is success ; false:register is failed
-
- <p>
- Note:<br>
- same to registerListener (DeviceInfoListener listener, IntentFilter filter),<br>
- no filter,default to full filter, all key change will call back to listener.
 </td>
       </tr>
     </table>
@@ -983,128 +783,9 @@ From class
 </div>
 
 
-<A NAME="setDeviceInfo(java.lang.String,%20java.lang.String,%20java.lang.String)"></A>
+<A NAME="setLightValue(int,%20double)"></A>
 
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public
-        
-        
-        
-        
-        void
-      </span>
-      <span class="sympad">setDeviceInfo</span>
-      <span class="normal">(String tableName, String key, String value)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <p>Description :<br>
- Use to setDeviceInfo<br>
- <p></p>
-    <table class="responsive">
-    <tr><th colspan=2>Parameters</th></tr>
-      <tr>
-        <td><code>tableName</code></td>
-        <td width="100%">
-          <code>String</code>:
-          the value tableName , refer to <code><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#MEDIA_STATE_TABLE">MEDIA_STATE_TABLE</a></code></td>
-      </tr>
-      <tr>
-        <td><code>key</code></td>
-        <td width="100%">
-          <code>String</code>:
-          The value key, The key include source key package name
-                  <p>
-                  for examlpe:
-                  <p>
-                  App foo.test set a key hsaeTest,the real key is foo.test.hsaeTest.<br>
-                  So you get must use foo.test.hsaeTest ,this is designed for different app can use same local key.
-                  <p></td>
-      </tr>
-      <tr>
-        <td><code>value</code></td>
-        <td width="100%">
-          <code>String</code>:
-          the value need String type
-</td>
-      </tr>
-    </table>
-
-    </div>
-</div>
-
-
-<A NAME="setPublicDeviceInfo(java.lang.String,%20java.lang.String,%20java.lang.String)"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public
-        
-        
-        
-        
-        void
-      </span>
-      <span class="sympad">setPublicDeviceInfo</span>
-      <span class="normal">(String tableName, String key, String value)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <p>Description :<br>
- Use to setPublicDeviceInfo<br>
- <p></p>
-    <table class="responsive">
-    <tr><th colspan=2>Parameters</th></tr>
-      <tr>
-        <td><code>tableName</code></td>
-        <td width="100%">
-          <code>String</code>:
-          the value tableName , refer to <code><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#MEDIA_STATE_TABLE">MEDIA_STATE_TABLE</a></code></td>
-      </tr>
-      <tr>
-        <td><code>key</code></td>
-        <td width="100%">
-          <code>String</code>:
-          The value key, The key include source key package name
-                  <p>
-                  for examlpe:
-                  App foo.test set a key hsaeTest,the real key is foo.test.hsaeTest.
-                  So you get must use foo.test.hsaeTest ,this is designed for different app can use same local key.
-                  <p></td>
-      </tr>
-      <tr>
-        <td><code>value</code></td>
-        <td width="100%">
-          <code>String</code>:
-          the value need String type
-</td>
-      </tr>
-    </table>
-
-    </div>
-</div>
-
-
-<A NAME="unregisterListener(hsae.vehicle.ivi.DeviceInfoListener,%20android.content.IntentFilter)"></A>
-
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-2"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public
@@ -1114,46 +795,44 @@ From class
         
         boolean
       </span>
-      <span class="sympad">unregisterListener</span>
-      <span class="normal">(<a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a> listener, IntentFilter filter)</span>
+      <span class="sympad">setLightValue</span>
+      <span class="normal">(int index, double value)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <p>Description :<br>
- Use to unregisterListener<br>
- <p></p>
+  <p>Description : this method is use to set vehicle Light value. <code><a href="../../../../reference/hsae/vehicle/light/LightData.html">LightData</a></code> constant fields is defined Light value field.</p>
     <table class="responsive">
     <tr><th colspan=2>Parameters</th></tr>
       <tr>
-        <td><code>listener</code></td>
+        <td><code>index</code></td>
         <td width="100%">
-          <code>DeviceInfoListener</code>:
-          The callback object <code><a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a></code></td>
+          <code>int</code>:
+          The data index, refers to  <code><a href="../../../../reference/hsae/vehicle/light/LightData.html">LightData</a></code></td>
       </tr>
       <tr>
-        <td><code>filter</code></td>
+        <td><code>value</code></td>
         <td width="100%">
-          <code>IntentFilter</code>:
-          IntentFilter  <code><a href="../../../../reference/android/content/IntentFilter.html">IntentFilter</a></code></td>
+          <code>double</code>:
+          The data value ,need double type</td>
       </tr>
     </table>
     <table class="responsive">
       <tr><th colspan=2>Returns</th></tr>
       <tr>
         <td><code>boolean</code></td>
-        <td width="100%">true: register is success ; false:register is failed</td>
+        <td width="100%">true: set meter data  is success; false:set meter data failed</td>
       </tr>
     </table>
   <div>
       <p><b>See also:</b></p>
-      <ul class="nolist"><li><code><a href="../../../../reference/android/content/IntentFilter.html">IntentFilter</a></code></li>
+      <ul class="nolist"><li><code><a href="../../../../reference/hsae/vehicle/light/LightData.html">LightData</a></code></li>
       </ul>
   </div>
 
@@ -1161,9 +840,9 @@ From class
 </div>
 
 
-<A NAME="unregisterListener(hsae.vehicle.ivi.DeviceInfoListener)"></A>
+<A NAME="unregisterListener(hsae.vehicle.light.LightListener)"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-2"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public
@@ -1174,27 +853,26 @@ From class
         boolean
       </span>
       <span class="sympad">unregisterListener</span>
-      <span class="normal">(<a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a> listener)</span>
+      <span class="normal">(<a href="../../../../reference/hsae/vehicle/light/LightListener.html">LightListener</a> listener)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <p>Description :<br>
- Use to unregisterListener<br>
+  <p>Description :unregister LightListener without filter.<br>
  <p></p>
     <table class="responsive">
     <tr><th colspan=2>Parameters</th></tr>
       <tr>
         <td><code>listener</code></td>
         <td width="100%">
-          <code>DeviceInfoListener</code>:
-          The callback object <code><a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a></code></td>
+          <code>LightListener</code>:
+          The callback object <code><a href="../../../../reference/hsae/vehicle/light/LightListener.html">LightListener</a></code></td>
       </tr>
     </table>
     <table class="responsive">
@@ -1202,11 +880,6 @@ From class
       <tr>
         <td><code>boolean</code></td>
         <td width="100%">true: unregister is success; false: unregister is  failed
-
- <p>
- Note:<br>
- same to registerListener (DeviceInfoListener listener, IntentFilter filter),<br>
- no filter,default to full filter, all key change will call back to listener.
 </td>
       </tr>
     </table>

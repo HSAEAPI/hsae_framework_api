@@ -48,13 +48,17 @@ var DATA = [
       { id:46, label:"hsae.vehicle.ivi", link:"reference/hsae/vehicle/ivi/package-summary.html", type:"package", deprecated:"false" },
       { id:47, label:"hsae.vehicle.ivi.DeviceInfoListener", link:"reference/hsae/vehicle/ivi/DeviceInfoListener.html", type:"class", deprecated:"false" },
       { id:48, label:"hsae.vehicle.ivi.HsaeDeviceInfo", link:"reference/hsae/vehicle/ivi/HsaeDeviceInfo.html", type:"class", deprecated:"false" },
-      { id:49, label:"hsae.vehicle.meter", link:"reference/hsae/vehicle/meter/package-summary.html", type:"package", deprecated:"false" },
-      { id:50, label:"hsae.vehicle.meter.MeterMetadata", link:"reference/hsae/vehicle/meter/MeterMetadata.html", type:"class", deprecated:"false" },
-      { id:51, label:"hsae.vehicle.meter.VehicleMeter", link:"reference/hsae/vehicle/meter/VehicleMeter.html", type:"class", deprecated:"false" },
-      { id:52, label:"hsae.vehicle.meter.VehicleMeterListener", link:"reference/hsae/vehicle/meter/VehicleMeterListener.html", type:"class", deprecated:"false" },
-      { id:53, label:"hsae.vehicle.power", link:"reference/hsae/vehicle/power/package-summary.html", type:"package", deprecated:"false" },
-      { id:54, label:"hsae.vehicle.power.PowerConstant", link:"reference/hsae/vehicle/power/PowerConstant.html", type:"class", deprecated:"false" },
-      { id:55, label:"hsae.vehicle.power.PowerListener", link:"reference/hsae/vehicle/power/PowerListener.html", type:"class", deprecated:"false" },
-      { id:56, label:"hsae.vehicle.power.VehiclePowerManager", link:"reference/hsae/vehicle/power/VehiclePowerManager.html", type:"class", deprecated:"false" }
+      { id:49, label:"hsae.vehicle.light", link:"reference/hsae/vehicle/light/package-summary.html", type:"package", deprecated:"false" },
+      { id:50, label:"hsae.vehicle.light.LightData", link:"reference/hsae/vehicle/light/LightData.html", type:"class", deprecated:"false" },
+      { id:51, label:"hsae.vehicle.light.LightListener", link:"reference/hsae/vehicle/light/LightListener.html", type:"class", deprecated:"false" },
+      { id:52, label:"hsae.vehicle.light.VehicleLight", link:"reference/hsae/vehicle/light/VehicleLight.html", type:"class", deprecated:"false" },
+      { id:53, label:"hsae.vehicle.meter", link:"reference/hsae/vehicle/meter/package-summary.html", type:"package", deprecated:"false" },
+      { id:54, label:"hsae.vehicle.meter.MeterMetadata", link:"reference/hsae/vehicle/meter/MeterMetadata.html", type:"class", deprecated:"false" },
+      { id:55, label:"hsae.vehicle.meter.VehicleMeter", link:"reference/hsae/vehicle/meter/VehicleMeter.html", type:"class", deprecated:"false" },
+      { id:56, label:"hsae.vehicle.meter.VehicleMeterListener", link:"reference/hsae/vehicle/meter/VehicleMeterListener.html", type:"class", deprecated:"false" },
+      { id:57, label:"hsae.vehicle.power", link:"reference/hsae/vehicle/power/package-summary.html", type:"package", deprecated:"false" },
+      { id:58, label:"hsae.vehicle.power.PowerConstant", link:"reference/hsae/vehicle/power/PowerConstant.html", type:"class", deprecated:"false" },
+      { id:59, label:"hsae.vehicle.power.PowerListener", link:"reference/hsae/vehicle/power/PowerListener.html", type:"class", deprecated:"false" },
+      { id:60, label:"hsae.vehicle.power.VehiclePowerManager", link:"reference/hsae/vehicle/power/VehiclePowerManager.html", type:"class", deprecated:"false" }
 
     ];

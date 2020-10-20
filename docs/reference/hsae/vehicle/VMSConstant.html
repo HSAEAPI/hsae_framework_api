@@ -122,6 +122,8 @@ Doclava
   <a href="../../../reference/hsae/vehicle/ac/package-summary.html">hsae.vehicle.ac</a></li>
     <li class="api apilevel-1">
   <a href="../../../reference/hsae/vehicle/ivi/package-summary.html">hsae.vehicle.ivi</a></li>
+    <li class="api apilevel-2">
+  <a href="../../../reference/hsae/vehicle/light/package-summary.html">hsae.vehicle.light</a></li>
     <li class="api apilevel-1">
   <a href="../../../reference/hsae/vehicle/meter/package-summary.html">hsae.vehicle.meter</a></li>
     <li class="api apilevel-2">
@@ -343,14 +345,21 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-2" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../reference/hsae/vehicle/VMSConstant.html#HSAE_LIGHT_SERVICE">HSAE_LIGHT_SERVICE</a></td>
+        <td class="jd-descrcol" width="100%">Use with <code><a href="../../../reference/hsae/vehicle/VehicleManager.html#getVehicleService(java.lang.String)">VehicleManager.getVehicleService(String)</a></code> to retrieve a <code><a href="../../../reference/hsae/vehicle/light/VehicleLight.html">VehicleLight</a></code> for hsae VMS sub service light.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../reference/hsae/vehicle/VMSConstant.html#HSAE_VEHICLE_METER">HSAE_VEHICLE_METER</a></td>
         <td class="jd-descrcol" width="100%">Use with <code><a href="../../../reference/hsae/vehicle/VehicleManager.html#getVehicleService(java.lang.String)">VehicleManager.getVehicleService(String)</a></code> to retrieve a <code><a href="../../../reference/hsae/vehicle/meter/VehicleMeter.html">VehicleMeter</a></code> for hsae VMS sub service meter.</td>
     </tr>
     
     
-    <tr class=" api apilevel-2" >
+    <tr class="alt-color api apilevel-2" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../reference/hsae/vehicle/VMSConstant.html#HSAE_VEHICLE_POWER">HSAE_VEHICLE_POWER</a></td>
         <td class="jd-descrcol" width="100%">Use with <code><a href="../../../reference/hsae/vehicle/VehicleManager.html#getVehicleService(java.lang.String)">VehicleManager.getVehicleService(String)</a></code> to retrieve a <code><a href="../../../reference/hsae/vehicle/power/VehiclePowerManager.html">VehiclePowerManager</a></code> for hsae VMS sub service meter.</td>
@@ -719,6 +728,50 @@ From class
         <span>
             
                 "deviceInfo"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="HSAE_LIGHT_SERVICE"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        HSAE_LIGHT_SERVICE
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Use with <code><a href="../../../reference/hsae/vehicle/VehicleManager.html#getVehicleService(java.lang.String)">VehicleManager.getVehicleService(String)</a></code> to retrieve a <code><a href="../../../reference/hsae/vehicle/light/VehicleLight.html">VehicleLight</a></code> for hsae VMS sub service light.
+
+ <p> Example:
+ <pre>
+     VehicleManager vehicleManager = (VehicleManager) getSystemService(HsaeContext.VEHICLE);
+     VehicleLight vehicleLight = (VehicleLight) vehicleManager.getVehicleService(VMSConstant.HSAE_LIGHT_SERVICE);
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "hsae.vehicle.light"
             
         </span>
         </div>

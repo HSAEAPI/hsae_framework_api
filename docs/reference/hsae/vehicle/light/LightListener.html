@@ -10,7 +10,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
 <title>
 
-  VehicleACListener - Hsae_android_API_reference |
+  LightListener - Hsae_android_API_reference |
 
 Doclava
 
@@ -39,7 +39,7 @@ Doclava
 </noscript>
 </head>
 
-<body class="1" itemscope itemtype="http://schema.org/Article">
+<body class="2" itemscope itemtype="http://schema.org/Article">
 
 <div id="header">
     <div id="headerLeft">
@@ -118,11 +118,11 @@ Doclava
   <a href="../../../../reference/hsae/content/package-summary.html">hsae.content</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/package-summary.html">hsae.vehicle</a></li>
-    <li class="selected api apilevel-1">
+    <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/ac/package-summary.html">hsae.vehicle.ac</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/ivi/package-summary.html">hsae.vehicle.ivi</a></li>
-    <li class="api apilevel-2">
+    <li class="selected api apilevel-2">
   <a href="../../../../reference/hsae/vehicle/light/package-summary.html">hsae.vehicle.light</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/meter/package-summary.html">hsae.vehicle.meter</a></li>
@@ -136,14 +136,14 @@ Doclava
               
     <li><h2>Interfaces</h2>
       <ul>
-          <li class="selected api apilevel-1"><a href="../../../../reference/hsae/vehicle/ac/VehicleACListener.html">VehicleACListener</a></li>
+          <li class="selected api apilevel-2"><a href="../../../../reference/hsae/vehicle/light/LightListener.html">LightListener</a></li>
       </ul>
     </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-1"><a href="../../../../reference/hsae/vehicle/ac/VehicleACConstant.html">VehicleACConstant</a></li>
-          <li class="api apilevel-1"><a href="../../../../reference/hsae/vehicle/ac/VehicleAirControl.html">VehicleAirControl</a></li>
+          <li class="api apilevel-2"><a href="../../../../reference/hsae/vehicle/light/LightData.html">LightData</a></li>
+          <li class="api apilevel-2"><a href="../../../../reference/hsae/vehicle/light/VehicleLight.html">VehicleLight</a></li>
       </ul>
     </li>
               
@@ -192,7 +192,7 @@ Doclava
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a>
   
   
 
@@ -208,7 +208,7 @@ Doclava
      
     
     interface
-<h1 itemprop="name">VehicleACListener</h1>
+<h1 itemprop="name">LightListener</h1>
 
 
 
@@ -221,13 +221,13 @@ Doclava
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
+<div id="jd-content" class="api apilevel-2">
 <table class="jd-inheritance-table">
 
 
     <tr>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">hsae.vehicle.ac.VehicleACListener</td>
+        <td colspan="1" class="jd-inheritance-class-cell">hsae.vehicle.light.LightListener</td>
     </tr>
     
 
@@ -243,9 +243,8 @@ Doclava
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">Description :<br>
- A callback to monitor changes in air conditioner status .
- <p></p>
+<p itemprop="articleBody">Description : the LightListener interface,client developer should implements this interface;
+ Use VehicleLight public boolean registerListener(LightListener listener) method can register</p>
 
 
 
@@ -306,7 +305,7 @@ Doclava
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-2" >
         <td class="jd-typecol"><nobr>
             abstract
             
@@ -316,10 +315,9 @@ Doclava
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/hsae/vehicle/ac/VehicleACListener.html#onDoubleResponse(int,%20double)">onDoubleResponse</a></span>(int index, double value)</nobr>
+        <span class="sympad"><a href="../../../../reference/hsae/vehicle/light/LightListener.html#onDoubleCallback(int,%20double)">onDoubleCallback</a></span>(int index, double value)</nobr>
         
-        <div class="jd-descrdiv">Description :<br>
- invoked when air conditioning status change.</div>
+        <div class="jd-descrdiv">Description : The vehicle Light double value callback method.</div>
   
   </td></tr>
 
@@ -372,9 +370,9 @@ Doclava
 
 
 
-<A NAME="onDoubleResponse(int,%20double)"></A>
+<A NAME="onDoubleCallback(int,%20double)"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-2"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public
@@ -384,33 +382,33 @@ Doclava
         
         void
       </span>
-      <span class="sympad">onDoubleResponse</span>
+      <span class="sympad">onDoubleCallback</span>
       <span class="normal">(int index, double value)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <p>Description :<br>
- invoked when air conditioning status change.</p>
+  <p>Description : The vehicle Light double value callback method.<br>
+ <p></p>
     <table class="responsive">
     <tr><th colspan=2>Parameters</th></tr>
       <tr>
         <td><code>index</code></td>
         <td width="100%">
           <code>int</code>:
-          defined in <code><a href="../../../../reference/hsae/vehicle/ac/VehicleACConstant.html">VehicleACConstant</a></code></td>
+          The data index, refers to  <code><a href="../../../../reference/hsae/vehicle/light/LightData.html">LightData</a></code></td>
       </tr>
       <tr>
         <td><code>value</code></td>
         <td width="100%">
           <code>double</code>:
-          the current status of the designated module of air conditioner
+          The double value data, the detail value refers to <code><a href="../../../../reference/hsae/vehicle/light/LightData.html">LightData</a></code> fields value define;
 </td>
       </tr>
     </table>

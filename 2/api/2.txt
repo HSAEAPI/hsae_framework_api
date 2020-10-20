@@ -380,6 +380,7 @@ package hsae.vehicle {
     ctor public VMSConstant();
     field public static final java.lang.String HSAE_AC_SERVICE = "hsae.vehicle.air.control";
     field public static final java.lang.String HSAE_DEVICE_INFO_SERVICE = "deviceInfo";
+    field public static final java.lang.String HSAE_LIGHT_SERVICE = "hsae.vehicle.light";
     field public static final java.lang.String HSAE_VEHICLE_METER = "hsae.vehicle.meter";
     field public static final java.lang.String HSAE_VEHICLE_POWER = "hsae.vehicle.power";
   }
@@ -448,6 +449,27 @@ package hsae.vehicle.ivi {
     method public boolean unregisterListener(hsae.vehicle.ivi.DeviceInfoListener);
     method public boolean unregisterListener(hsae.vehicle.ivi.DeviceInfoListener, android.content.IntentFilter);
     field public static final java.lang.String MEDIA_STATE_TABLE = "hsae.vehicle.media.state";
+  }
+
+}
+
+package hsae.vehicle.light {
+
+  public class LightData {
+    ctor public LightData();
+    method public static final java.lang.String toString(int);
+    field public static final int ATMOSPHERE_LAMP_HOLIDAY = 453181744; // 0x1b030130
+  }
+
+  public abstract interface LightListener {
+    method public abstract void onDoubleCallback(int, double);
+  }
+
+  public class VehicleLight {
+    method public double getLightValue(int);
+    method public boolean registerListener(hsae.vehicle.light.LightListener);
+    method public boolean setLightValue(int, double);
+    method public boolean unregisterListener(hsae.vehicle.light.LightListener);
   }
 
 }
