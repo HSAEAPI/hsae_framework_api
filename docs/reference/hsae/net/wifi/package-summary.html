@@ -205,6 +205,35 @@ Doclava
 <div id="jd-content" class="api apilevel-2">
 
 
+  <div class="jd-descr">
+    <p>This package provides operation of softAp,the developers can used to get softAp state and number
+    of connected clients.</p>
+
+<p>This package contains <code><a href="../../../../reference/hsae/net/wifi/HsaeWifiManager.html">HsaeWifiManager</a></code> class that used to manager softAp.
+<p>
+
+<pre>
+    <code>
+    HsaeWifiManager mHsaeWifiManager = (HsaeWifiManager)  getApplicationContext().getSystemService(HsaeContext.HSAE_WIFI_SERVICE);
+    mHsaeWifiManager.registerHsaeSoftApCallback(new HsaeWifiManager.HsaeSoftApCallback() {
+
+    public void onStateChanged(int state, int failureReason) {
+        Log.d(TAG,"this is a onStateChanged callback!");
+    }
+
+    public void onNumClientsChanged(int num) {
+        Log.d(TAG,"this is a onNumClientsChanged callback!num="+num);
+    }
+    }, new Handler());
+    </code>
+</pre>
+
+<p>This package contains <code><a href="../../../../reference/hsae/net/wifi/HsaeWifiManager.html">HsaeWifiManager</a></code> interface that a callback to monitor
+    changes in softAp status and number of connected clients.
+<p>
+
+  </div>
+
 
 
 
