@@ -10,7 +10,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
 <title>
 
-  DeviceInfoListener - Hsae_android_API_reference |
+  HsaeWifiManager.HsaeSoftApCallback - Hsae_android_API_reference |
 
 Doclava
 
@@ -39,7 +39,7 @@ Doclava
 </noscript>
 </head>
 
-<body class="1" itemscope itemtype="http://schema.org/Article">
+<body class="2" itemscope itemtype="http://schema.org/Article">
 
 <div id="header">
     <div id="headerLeft">
@@ -118,13 +118,13 @@ Doclava
   <a href="../../../../reference/com/hsae/libsrcmanager/package-summary.html">com.hsae.libsrcmanager</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/hsae/content/package-summary.html">hsae.content</a></li>
-    <li class="api apilevel-2">
+    <li class="selected api apilevel-2">
   <a href="../../../../reference/hsae/net/wifi/package-summary.html">hsae.net.wifi</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/package-summary.html">hsae.vehicle</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/ac/package-summary.html">hsae.vehicle.ac</a></li>
-    <li class="selected api apilevel-1">
+    <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/ivi/package-summary.html">hsae.vehicle.ivi</a></li>
     <li class="api apilevel-2">
   <a href="../../../../reference/hsae/vehicle/light/package-summary.html">hsae.vehicle.light</a></li>
@@ -140,13 +140,13 @@ Doclava
               
     <li><h2>Interfaces</h2>
       <ul>
-          <li class="selected api apilevel-1"><a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a></li>
+          <li class="selected api apilevel-2"><a href="../../../../reference/hsae/net/wifi/HsaeWifiManager.HsaeSoftApCallback.html">HsaeWifiManager.HsaeSoftApCallback</a></li>
       </ul>
     </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-1"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html">HsaeDeviceInfo</a></li>
+          <li class="api apilevel-2"><a href="../../../../reference/hsae/net/wifi/HsaeWifiManager.html">HsaeWifiManager</a></li>
       </ul>
     </li>
               
@@ -195,7 +195,7 @@ Doclava
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a>
   
   
 
@@ -207,11 +207,11 @@ Doclava
 
 <div id="jd-header">
     public
-     
+    static 
      
     
     interface
-<h1 itemprop="name">DeviceInfoListener</h1>
+<h1 itemprop="name">HsaeWifiManager.HsaeSoftApCallback</h1>
 
 
 
@@ -224,13 +224,13 @@ Doclava
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
+<div id="jd-content" class="api apilevel-2">
 <table class="jd-inheritance-table">
 
 
     <tr>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">hsae.vehicle.ivi.DeviceInfoListener</td>
+        <td colspan="1" class="jd-inheritance-class-cell">hsae.net.wifi.HsaeWifiManager.HsaeSoftApCallback</td>
     </tr>
     
 
@@ -246,8 +246,10 @@ Doclava
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">Description : the DeviceInfoListener interface,client developer should implements this interface;
- Use HsaeDeviceInfo public boolean registerListener(DeviceInfoListener listener) method can register</p>
+<p itemprop="articleBody">Base class for soft AP callback. Should be extended by applications and set when calling
+ {HsaeWifiManager.registerHsaeSoftApCallback(HsaeSoftApCallback, Handler)}.
+
+</p>
 
 
 
@@ -308,7 +310,7 @@ Doclava
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-2" >
         <td class="jd-typecol"><nobr>
             abstract
             
@@ -318,9 +320,27 @@ Doclava
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html#onDeviceInfoChange(java.lang.String,%20java.lang.String,%20java.lang.String)">onDeviceInfoChange</a></span>(String tableId, String key, String value)</nobr>
+        <span class="sympad"><a href="../../../../reference/hsae/net/wifi/HsaeWifiManager.HsaeSoftApCallback.html#onNumClientsChanged(int)">onNumClientsChanged</a></span>(int numClients)</nobr>
         
-        <div class="jd-descrdiv">Description : the DeviceInfo table value change callback.</div>
+        <div class="jd-descrdiv">Called when number of connected clients to soft AP changes.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-2" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/hsae/net/wifi/HsaeWifiManager.HsaeSoftApCallback.html#onStateChanged(int,%20int)">onStateChanged</a></span>(int state, int failureReason)</nobr>
+        
+        <div class="jd-descrdiv">Called when soft AP state changes.</div>
   
   </td></tr>
 
@@ -373,9 +393,9 @@ Doclava
 
 
 
-<A NAME="onDeviceInfoChange(java.lang.String,%20java.lang.String,%20java.lang.String)"></A>
+<A NAME="onNumClientsChanged(int)"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-2"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public
@@ -385,39 +405,75 @@ Doclava
         
         void
       </span>
-      <span class="sympad">onDeviceInfoChange</span>
-      <span class="normal">(String tableId, String key, String value)</span>
+      <span class="sympad">onNumClientsChanged</span>
+      <span class="normal">(int numClients)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <p>Description : the DeviceInfo table value change callback.
- <p></p>
+  <p>Called when number of connected clients to soft AP changes.</p>
     <table class="responsive">
     <tr><th colspan=2>Parameters</th></tr>
       <tr>
-        <td><code>tableId</code></td>
+        <td><code>numClients</code></td>
         <td width="100%">
-          <code>String</code>:
-          the value tableName , refer to <code><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html">HsaeDeviceInfo</a></code>, MEDIA_STATE_TABLE</td>
+          <code>int</code>:
+          number of connected clients
+</td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="onStateChanged(int,%20int)"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        abstract
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">onStateChanged</span>
+      <span class="normal">(int state, int failureReason)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Called when soft AP state changes.</p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>state</code></td>
+        <td width="100%">
+          <code>int</code>:
+          new new AP state. One of {WifiManager.WIFI_AP_STATE_DISABLED},
+        {WifiManager.WIFI_AP_STATE_DISABLING}, {WifiManager.WIFI_AP_STATE_ENABLED},
+        {WifiManager.WIFI_AP_STATE_ENABLING}, {WifiManager.WIFI_AP_STATE_FAILED}</td>
       </tr>
       <tr>
-        <td><code>key</code></td>
+        <td><code>failureReason</code></td>
         <td width="100%">
-          <code>String</code>:
-          The value key, The key include source key package name</td>
-      </tr>
-      <tr>
-        <td><code>value</code></td>
-        <td width="100%">
-          <code>String</code>:
-          the value need String type
+          <code>int</code>:
+          reason when in failed state. One of
+        {WifiManager.SAP_START_FAILURE_GENERAL}, {WifiManager.SAP_START_FAILURE_NO_CHANNEL}
 </td>
       </tr>
     </table>

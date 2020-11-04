@@ -10,7 +10,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
 <title>
 
-  DeviceInfoListener - Hsae_android_API_reference |
+  HsaeSrcMgrConstants - Hsae_android_API_reference |
 
 Doclava
 
@@ -39,7 +39,7 @@ Doclava
 </noscript>
 </head>
 
-<body class="1" itemscope itemtype="http://schema.org/Article">
+<body class="2" itemscope itemtype="http://schema.org/Article">
 
 <div id="header">
     <div id="headerLeft">
@@ -114,7 +114,7 @@ Doclava
   <a href="../../../../reference/com/hsae/autosdk/vehicle/package-summary.html">com.hsae.autosdk.vehicle</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/com/hsae/autosdk_external/settings/package-summary.html">com.hsae.autosdk_external.settings</a></li>
-    <li class="api apilevel-2">
+    <li class="selected api apilevel-2">
   <a href="../../../../reference/com/hsae/libsrcmanager/package-summary.html">com.hsae.libsrcmanager</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/hsae/content/package-summary.html">hsae.content</a></li>
@@ -124,7 +124,7 @@ Doclava
   <a href="../../../../reference/hsae/vehicle/package-summary.html">hsae.vehicle</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/ac/package-summary.html">hsae.vehicle.ac</a></li>
-    <li class="selected api apilevel-1">
+    <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/ivi/package-summary.html">hsae.vehicle.ivi</a></li>
     <li class="api apilevel-2">
   <a href="../../../../reference/hsae/vehicle/light/package-summary.html">hsae.vehicle.light</a></li>
@@ -140,13 +140,13 @@ Doclava
               
     <li><h2>Interfaces</h2>
       <ul>
-          <li class="selected api apilevel-1"><a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a></li>
+          <li class="selected api apilevel-2"><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcMgrConstants.html">HsaeSrcMgrConstants</a></li>
       </ul>
     </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-1"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html">HsaeDeviceInfo</a></li>
+          <li class="api apilevel-2"><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcManager.html">HsaeSrcManager</a></li>
       </ul>
     </li>
               
@@ -195,7 +195,7 @@ Doclava
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a>
   
   
 
@@ -211,7 +211,7 @@ Doclava
      
     
     interface
-<h1 itemprop="name">DeviceInfoListener</h1>
+<h1 itemprop="name">HsaeSrcMgrConstants</h1>
 
 
 
@@ -224,13 +224,13 @@ Doclava
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
+<div id="jd-content" class="api apilevel-2">
 <table class="jd-inheritance-table">
 
 
     <tr>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">hsae.vehicle.ivi.DeviceInfoListener</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.hsae.libsrcmanager.HsaeSrcMgrConstants</td>
     </tr>
     
 
@@ -246,8 +246,10 @@ Doclava
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">Description : the DeviceInfoListener interface,client developer should implements this interface;
- Use HsaeDeviceInfo public boolean registerListener(DeviceInfoListener listener) method can register</p>
+<p itemprop="articleBody">The HsaeSrcMgrConstants interface prodive application(source) name and Id,Source (application) Id constant definition
+ in HSAE framework.Suggest to use this definition in each component.
+ <p>
+</p>
 
 
 
@@ -288,45 +290,62 @@ Doclava
 
 
 
+<!-- =========== ENUM CONSTANT SUMMARY =========== -->
+<table id="constants" class="jd-sumtable"><tr><th colspan="12">Constants</th></tr>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ========== METHOD SUMMARY =========== -->
-<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
-
-
-
-	 
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            void</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html#onDeviceInfoChange(java.lang.String,%20java.lang.String,%20java.lang.String)">onDeviceInfoChange</a></span>(String tableId, String key, String value)</nobr>
-        
-        <div class="jd-descrdiv">Description : the DeviceInfo table value change callback.</div>
-  
-  </td></tr>
-
-
+    
+    <tr class="alt-color api apilevel-2" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcMgrConstants.html#APP_BT_MUSIC">APP_BT_MUSIC</a></td>
+        <td class="jd-descrcol" width="100%">Description:<br>
+ Source (application) Id for BT music ,the value of APP_BT_MUSIC mean BT music
+</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-2" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcMgrConstants.html#APP_CAR_LIFE">APP_CAR_LIFE</a></td>
+        <td class="jd-descrcol" width="100%">Description:<br>
+ Source (application) Id for Carlifeapp ,the value of APP_CAR_LIFE mean Carlifeapp.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-2" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcMgrConstants.html#APP_USB_AUDIO">APP_USB_AUDIO</a></td>
+        <td class="jd-descrcol" width="100%">Description:<br>
+ Source (application) Id for USB music,the value of APP_USB_AUDIO mean USB music
+</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-2" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcMgrConstants.html#APP_USB_VIDEO">APP_USB_VIDEO</a></td>
+        <td class="jd-descrcol" width="100%">Description:<br>
+ Source (application) Id for USB video,the value of APP_USB_VIDEO mean USB video
+</td>
+    </tr>
+    
+    
 
 </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -354,6 +373,177 @@ Doclava
 <!-- Constants -->
 
 
+<!-- ========= ENUM CONSTANTS DETAIL ======== -->
+<h2>Constants</h2>
+
+
+
+
+<A NAME="APP_BT_MUSIC"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        APP_BT_MUSIC
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description:<br>
+ Source (application) Id for BT music ,the value of APP_BT_MUSIC mean BT music
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                103
+                (0x00000067)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="APP_CAR_LIFE"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        APP_CAR_LIFE
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description:<br>
+ Source (application) Id for Carlifeapp ,the value of APP_CAR_LIFE mean Carlifeapp. Carlifeapp packagename is "com.hsae.carlife"
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                108
+                (0x0000006c)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="APP_USB_AUDIO"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        APP_USB_AUDIO
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description:<br>
+ Source (application) Id for USB music,the value of APP_USB_AUDIO mean USB music
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                101
+                (0x00000065)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="APP_USB_VIDEO"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        APP_USB_VIDEO
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description:<br>
+ Source (application) Id for USB video,the value of APP_USB_VIDEO mean USB video
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                102
+                (0x00000066)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+
 <!-- Fields -->
 
 
@@ -368,64 +558,6 @@ Doclava
 
 <!-- ========= METHOD DETAIL ======== -->
 <!-- Public methdos -->
-
-<h2>Public Methods</h2>
-
-
-
-<A NAME="onDeviceInfoChange(java.lang.String,%20java.lang.String,%20java.lang.String)"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public
-        abstract
-        
-        
-        
-        void
-      </span>
-      <span class="sympad">onDeviceInfoChange</span>
-      <span class="normal">(String tableId, String key, String value)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <p>Description : the DeviceInfo table value change callback.
- <p></p>
-    <table class="responsive">
-    <tr><th colspan=2>Parameters</th></tr>
-      <tr>
-        <td><code>tableId</code></td>
-        <td width="100%">
-          <code>String</code>:
-          the value tableName , refer to <code><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html">HsaeDeviceInfo</a></code>, MEDIA_STATE_TABLE</td>
-      </tr>
-      <tr>
-        <td><code>key</code></td>
-        <td width="100%">
-          <code>String</code>:
-          The value key, The key include source key package name</td>
-      </tr>
-      <tr>
-        <td><code>value</code></td>
-        <td width="100%">
-          <code>String</code>:
-          the value need String type
-</td>
-      </tr>
-    </table>
-
-    </div>
-</div>
-
-
 
 
 

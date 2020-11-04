@@ -10,7 +10,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
 <title>
 
-  DeviceInfoListener - Hsae_android_API_reference |
+  com.hsae.libsrcmanager - Hsae_android_API_reference |
 
 Doclava
 
@@ -39,7 +39,7 @@ Doclava
 </noscript>
 </head>
 
-<body class="1" itemscope itemtype="http://schema.org/Article">
+<body class="2">
 
 <div id="header">
     <div id="headerLeft">
@@ -114,7 +114,7 @@ Doclava
   <a href="../../../../reference/com/hsae/autosdk/vehicle/package-summary.html">com.hsae.autosdk.vehicle</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/com/hsae/autosdk_external/settings/package-summary.html">com.hsae.autosdk_external.settings</a></li>
-    <li class="api apilevel-2">
+    <li class="selected api apilevel-2">
   <a href="../../../../reference/com/hsae/libsrcmanager/package-summary.html">com.hsae.libsrcmanager</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/hsae/content/package-summary.html">hsae.content</a></li>
@@ -124,7 +124,7 @@ Doclava
   <a href="../../../../reference/hsae/vehicle/package-summary.html">hsae.vehicle</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/ac/package-summary.html">hsae.vehicle.ac</a></li>
-    <li class="selected api apilevel-1">
+    <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/ivi/package-summary.html">hsae.vehicle.ivi</a></li>
     <li class="api apilevel-2">
   <a href="../../../../reference/hsae/vehicle/light/package-summary.html">hsae.vehicle.light</a></li>
@@ -140,13 +140,13 @@ Doclava
               
     <li><h2>Interfaces</h2>
       <ul>
-          <li class="selected api apilevel-1"><a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a></li>
+        <li class="api apilevel-2"><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcMgrConstants.html">HsaeSrcMgrConstants</a></li>
       </ul>
     </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-1"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html">HsaeDeviceInfo</a></li>
+        <li class="api apilevel-2"><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcManager.html">HsaeSrcManager</a></li>
       </ul>
     </li>
               
@@ -186,264 +186,93 @@ Doclava
 <div class="g-unit" id="doc-content">
 
 <div id="api-info-block">
-
-
-
-
-<div class="sum-details-links">
-
-</div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a>
   
   
 
 </div>
-</div><!-- end api-info-block -->
-
-
-<!-- ======== START OF CLASS DATA ======== -->
+</div>
 
 <div id="jd-header">
-    public
-     
-     
-    
-    interface
-<h1 itemprop="name">DeviceInfoListener</h1>
-
-
-
-  
-  
-  
-
-
+  package
+  <h1>com.hsae.libsrcmanager</h1>
 </div><!-- end header -->
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
-<table class="jd-inheritance-table">
+<div id="jd-content" class="api apilevel-2">
 
 
-    <tr>
-         	
-        <td colspan="1" class="jd-inheritance-class-cell">hsae.vehicle.ivi.DeviceInfoListener</td>
-    </tr>
+  <div class="jd-descr">
+    <p>This package contains interfaces of source manager, the interfaces are based on Android
+    AIDL. </p>
+
+
+<p>Source manager interface provides source related functions for high layer modules, such as HMI.
+    Source manager is responsible for source switch management and info update management.
+<p>
+
+    all development can get HsaeSrcManager by this way:<br>
+    Example:
+<pre>
+     HsaeSrcManager hsaeSrcManager = (HsaeSrcManager) context.getSystemService(HsaeContext.HSAE_SRC_MANAGER);
+</pre>
+</p>
+
+
+  </div>
+
+
+
+
+
+  
+    <h2>Interfaces</h2>
+    <div class="jd-sumtable">
     
-
-</table>
-
-
-
-
-
-
-
-<div class="jd-descr">
-
-
-<h2>Class Overview</h2>
-<p itemprop="articleBody">Description : the DeviceInfoListener interface,client developer should implements this interface;
- Use HsaeDeviceInfo public boolean registerListener(DeviceInfoListener listener) method can register</p>
-
-
-
-
-
-
-</div><!-- jd-descr -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="jd-descr">
-
-
-<h2>Summary</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ========== METHOD SUMMARY =========== -->
-<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
-
-
-
-	 
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            void</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html#onDeviceInfoChange(java.lang.String,%20java.lang.String,%20java.lang.String)">onDeviceInfoChange</a></span>(String tableId, String key, String value)</nobr>
-        
-        <div class="jd-descrdiv">Description : the DeviceInfo table value change callback.</div>
-  
-  </td></tr>
-
-
-
-</table>
-
-
-
-
-
-
-
-</div><!-- jd-descr (summary) -->
-
-<!-- Details -->
-
-
-
-
-
-
-
-
-<!-- XML Attributes -->
-
-
-<!-- Enum Values -->
-
-
-<!-- Constants -->
-
-
-<!-- Fields -->
-
-
-<!-- Public ctors -->
-
-
-
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<!-- Protected ctors -->
-
-
-
-<!-- ========= METHOD DETAIL ======== -->
-<!-- Public methdos -->
-
-<h2>Public Methods</h2>
-
-
-
-<A NAME="onDeviceInfoChange(java.lang.String,%20java.lang.String,%20java.lang.String)"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public
-        abstract
-        
-        
-        
-        void
-      </span>
-      <span class="sympad">onDeviceInfoChange</span>
-      <span class="normal">(String tableId, String key, String value)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <p>Description : the DeviceInfo table value change callback.
- <p></p>
-    <table class="responsive">
-    <tr><th colspan=2>Parameters</th></tr>
-      <tr>
-        <td><code>tableId</code></td>
-        <td width="100%">
-          <code>String</code>:
-          the value tableName , refer to <code><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html">HsaeDeviceInfo</a></code>, MEDIA_STATE_TABLE</td>
-      </tr>
-      <tr>
-        <td><code>key</code></td>
-        <td width="100%">
-          <code>String</code>:
-          The value key, The key include source key package name</td>
-      </tr>
-      <tr>
-        <td><code>value</code></td>
-        <td width="100%">
-          <code>String</code>:
-          the value need String type
-</td>
-      </tr>
-    </table>
-
+  <table class="jd-sumtable-expando">
+        <tr class="alt-color api apilevel-2" >
+              <td><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcMgrConstants.html">HsaeSrcMgrConstants</a></td>
+              <td width="100%">The HsaeSrcMgrConstants interface prodive application(source) name and Id,Source (application) Id constant definition
+ in HSAE framework.Suggest to use this definition in each component.&nbsp;</td>
+          </tr>
+  </table>
     </div>
-</div>
+  
 
 
+  
+    <h2>Classes</h2>
+    <div class="jd-sumtable">
+    
+  <table class="jd-sumtable-expando">
+        <tr class="alt-color api apilevel-2" >
+              <td><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcManager.html">HsaeSrcManager</a></td>
+              <td width="100%">This calss provides source related functions for high layer modules, such as HMI.&nbsp;</td>
+          </tr>
+  </table>
+    </div>
+  
 
 
-
-<!-- ========= METHOD DETAIL ======== -->
-
+  
 
 
-<!-- ========= END OF CLASS DATA ========= -->
-<A NAME="navbar_top"></A>
+  
+
+
+  
+
 
 <div id="footer">
   <p><img src="https://s1.ax1x.com/2020/09/30/0nye8f.png" alt="0nye8f.png" border="0" /></p>
   <p>Posted by: HSAE</p>
 </div> <!-- end footer -->
 
-</div> <!-- jd-content -->
-
-</div><!-- end doc-content -->
+</div><!-- end jd-content -->
+</div><!-- doc-content -->
 
 </div> <!-- end body-content --> 
 

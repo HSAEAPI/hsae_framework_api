@@ -356,6 +356,29 @@ package com.hsae.autosdk_external.settings {
 
 }
 
+package com.hsae.libsrcmanager {
+
+  public final class HsaeSrcManager {
+    method public int getCurrentSrc() throws android.os.RemoteException;
+    method public static com.hsae.libsrcmanager.HsaeSrcManager getInstance(android.content.Context);
+    method public java.lang.String getSrcExtraInfo(java.lang.String, java.util.Map) throws android.os.RemoteException;
+    method public boolean hasBreakOffState(java.lang.String) throws android.os.RemoteException;
+    method public void removeCallback(ISrcCallback, int) throws android.os.RemoteException;
+    method public void setCallback(ISrcCallback, int) throws android.os.RemoteException;
+    method public void setDevStatus(int, int, int) throws android.os.RemoteException;
+    method public void switchSrc(int, java.lang.String, boolean) throws android.os.RemoteException;
+    method public void updateInfoToMeter(int, java.lang.String) throws android.os.RemoteException;
+  }
+
+  public abstract interface HsaeSrcMgrConstants {
+    field public static final int APP_BT_MUSIC = 103; // 0x67
+    field public static final int APP_CAR_LIFE = 108; // 0x6c
+    field public static final int APP_USB_AUDIO = 101; // 0x65
+    field public static final int APP_USB_VIDEO = 102; // 0x66
+  }
+
+}
+
 package hsae.content {
 
   public abstract class HsaeContext {
@@ -366,10 +389,26 @@ package hsae.content {
     field public static final java.lang.String HSAE_INPUT = "hsae.input";
     field public static final deprecated java.lang.String HSAE_POPUP = "hsae.popup";
     field public static final deprecated java.lang.String HSAE_SOURCE = "hsae.source";
+    field public static final java.lang.String HSAE_SRC_MANAGER = "hsae.SrcManager";
     field public static final java.lang.String HSAE_VEHICLE = "hsae.vehicle";
     field public static final java.lang.String HSAE_VEHICLE_AUDIO = "hsae.audio";
     field public static final java.lang.String HSAE_VEHICLE_POWER = "hsae.vehicle.power";
+    field public static final java.lang.String HSAE_WIFI_SERVICE = "hsae.wifi";
     field public static final java.lang.String VEHICLE = "hsae.vehicle.service";
+  }
+
+}
+
+package hsae.net.wifi {
+
+  public class HsaeWifiManager {
+    method public void registerHsaeSoftApCallback(hsae.net.wifi.HsaeWifiManager.HsaeSoftApCallback, android.os.Handler);
+    method public void unregisterHsaeSoftApCallback(hsae.net.wifi.HsaeWifiManager.HsaeSoftApCallback);
+  }
+
+  public static abstract interface HsaeWifiManager.HsaeSoftApCallback {
+    method public abstract void onNumClientsChanged(int);
+    method public abstract void onStateChanged(int, int);
   }
 
 }

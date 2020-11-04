@@ -1,7 +1,9 @@
 com.hsae.autosdk.settings
 com.hsae.autosdk.vehicle
 com.hsae.autosdk_external.settings
+com.hsae.libsrcmanager
 hsae.content
+hsae.net.wifi
 hsae.vehicle
 hsae.vehicle.ac
 hsae.vehicle.ivi

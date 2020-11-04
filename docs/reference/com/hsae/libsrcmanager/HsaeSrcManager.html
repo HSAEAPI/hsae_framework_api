@@ -10,7 +10,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
 <title>
 
-  HsaeDeviceInfo - Hsae_android_API_reference |
+  HsaeSrcManager - Hsae_android_API_reference |
 
 Doclava
 
@@ -39,7 +39,7 @@ Doclava
 </noscript>
 </head>
 
-<body class="1" itemscope itemtype="http://schema.org/Article">
+<body class="2" itemscope itemtype="http://schema.org/Article">
 
 <div id="header">
     <div id="headerLeft">
@@ -114,7 +114,7 @@ Doclava
   <a href="../../../../reference/com/hsae/autosdk/vehicle/package-summary.html">com.hsae.autosdk.vehicle</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/com/hsae/autosdk_external/settings/package-summary.html">com.hsae.autosdk_external.settings</a></li>
-    <li class="api apilevel-2">
+    <li class="selected api apilevel-2">
   <a href="../../../../reference/com/hsae/libsrcmanager/package-summary.html">com.hsae.libsrcmanager</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/hsae/content/package-summary.html">hsae.content</a></li>
@@ -124,7 +124,7 @@ Doclava
   <a href="../../../../reference/hsae/vehicle/package-summary.html">hsae.vehicle</a></li>
     <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/ac/package-summary.html">hsae.vehicle.ac</a></li>
-    <li class="selected api apilevel-1">
+    <li class="api apilevel-1">
   <a href="../../../../reference/hsae/vehicle/ivi/package-summary.html">hsae.vehicle.ivi</a></li>
     <li class="api apilevel-2">
   <a href="../../../../reference/hsae/vehicle/light/package-summary.html">hsae.vehicle.light</a></li>
@@ -140,13 +140,13 @@ Doclava
               
     <li><h2>Interfaces</h2>
       <ul>
-          <li class="api apilevel-1"><a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a></li>
+          <li class="api apilevel-2"><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcMgrConstants.html">HsaeSrcMgrConstants</a></li>
       </ul>
     </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="selected api apilevel-1"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html">HsaeDeviceInfo</a></li>
+          <li class="selected api apilevel-2"><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcManager.html">HsaeSrcManager</a></li>
       </ul>
     </li>
               
@@ -205,16 +205,13 @@ Summary:
 
 
 
-  <a href="#constants">Constants</a>
-  
 
 
 
 
 
 
-
-  &#124; <a href="#pubmethods">Methods</a>
+  <a href="#pubmethods">Methods</a>
   
 
 
@@ -226,7 +223,7 @@ Summary:
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a>
   
   
 
@@ -239,10 +236,10 @@ Summary:
 <div id="jd-header">
     public
      
-     
+    final 
     
     class
-<h1 itemprop="name">HsaeDeviceInfo</h1>
+<h1 itemprop="name">HsaeSrcManager</h1>
 
 
 
@@ -261,7 +258,7 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
+<div id="jd-content" class="api apilevel-2">
 <table class="jd-inheritance-table">
 
 
@@ -275,7 +272,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">hsae.vehicle.ivi.HsaeDeviceInfo</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.hsae.libsrcmanager.HsaeSrcManager</td>
     </tr>
     
 
@@ -291,14 +288,10 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">The HsaeDeviceInfo class implement VehicleManager sub service <code><a href="../../../../reference/hsae/vehicle/VMSConstant.html#HSAE_DEVICE_INFO_SERVICE">hsae.vehicle.VMSConstant.HSAE_DEVICE_INFO_SERVICE</a></code>.
- <br> HsaeDeviceInfo provide get/set and register/unregister method for apk.
-
- <br> all development can get HsaeDeviceInfo service by this way:
- <p> Example:
- <pre>
-     VehicleManager vehicleManager = (VehicleManager) getSystemService(HsaeContext.VEHICLE);
-     HsaeDeviceInfo hsaeDeviceInfo = (HsaeDeviceInfo) vehicleManager.getVehicleService(VMSConstant.HSAE_DEVICE_INFO_SERVICE);</p>
+<p itemprop="articleBody">This calss provides source related functions for high layer modules, such as HMI.
+ HsaeSrcManager is responsible for source switch management and info update management.
+ <p>
+</p>
 
 
 
@@ -339,23 +332,6 @@ Summary:
 
 
 
-<!-- =========== ENUM CONSTANT SUMMARY =========== -->
-<table id="constants" class="jd-sumtable"><tr><th colspan="12">Constants</th></tr>
-
-
-    
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-typecol">String</td>
-        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#MEDIA_STATE_TABLE">MEDIA_STATE_TABLE</a></td>
-        <td class="jd-descrcol" width="100%">device info table define
-</td>
-    </tr>
-    
-    
-
-</table>
-
-
 
 
 
@@ -376,7 +352,43 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-2" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcManager.html#getCurrentSrc()">getCurrentSrc</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Description:<br>
+ Get current Id of source(application)<br>
+ <p></div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-2" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            static
+            
+            
+            <a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcManager.html">HsaeSrcManager</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcManager.html#getInstance(android.content.Context)">getInstance</a></span>(Context context)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-2" >
         <td class="jd-typecol"><nobr>
             
             
@@ -386,17 +398,17 @@ Summary:
             String</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#getDeviceInfo(java.lang.String,%20java.lang.String)">getDeviceInfo</a></span>(String tableName, String key)</nobr>
+        <span class="sympad"><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcManager.html#getSrcExtraInfo(java.lang.String,%20java.util.Map)">getSrcExtraInfo</a></span>(String type, Map params)</nobr>
         
-        <div class="jd-descrdiv">Description :<br>
- Use to getDeviceInfo<br>
+        <div class="jd-descrdiv">Description:<br>
+ Get source (application) Id from last mode<br>
  <p></div>
   
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-2" >
         <td class="jd-typecol"><nobr>
             
             
@@ -406,37 +418,20 @@ Summary:
             boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#registerListener(hsae.vehicle.ivi.DeviceInfoListener,%20android.content.IntentFilter)">registerListener</a></span>(<a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a> listener, IntentFilter filter)</nobr>
+        <span class="sympad"><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcManager.html#hasBreakOffState(java.lang.String)">hasBreakOffState</a></span>(String type)</nobr>
         
-        <div class="jd-descrdiv">Description :<br>
- Use to registerListener<br>
- <p></div>
+        <div class="jd-descrdiv">Description:<br>
+ check if has out signal that break do src switch<br>
+ <p>
+ Note:<br>
+ (1)	if the param type set value "null", check whether have any break<br>
+ (2)	if the param type contains "power" and "update".</div>
   
   </td></tr>
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            boolean</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#registerListener(hsae.vehicle.ivi.DeviceInfoListener)">registerListener</a></span>(<a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a> listener)</nobr>
-        
-        <div class="jd-descrdiv">Description :<br>
- Use to registerListener<br>
- <p></div>
-  
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-2" >
         <td class="jd-typecol"><nobr>
             
             
@@ -446,17 +441,17 @@ Summary:
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#setDeviceInfo(java.lang.String,%20java.lang.String,%20java.lang.String)">setDeviceInfo</a></span>(String tableName, String key, String value)</nobr>
+        <span class="sympad"><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcManager.html#removeCallback(ISrcCallback,%20int)">removeCallback</a></span>(ISrcCallback c, int app)</nobr>
         
-        <div class="jd-descrdiv">Description :<br>
- Use to setDeviceInfo<br>
+        <div class="jd-descrdiv">Description:<br>
+ Client to remove call back from Source manager,It’s the opposite operation to <code><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcManager.html#setCallback(ISrcCallback,%20int)">setCallback(ISrcCallback, int)</a></code>
  <p></div>
   
   </td></tr>
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-2" >
         <td class="jd-typecol"><nobr>
             
             
@@ -466,51 +461,72 @@ Summary:
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#setPublicDeviceInfo(java.lang.String,%20java.lang.String,%20java.lang.String)">setPublicDeviceInfo</a></span>(String tableName, String key, String value)</nobr>
+        <span class="sympad"><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcManager.html#setCallback(ISrcCallback,%20int)">setCallback</a></span>(ISrcCallback c, int app)</nobr>
         
-        <div class="jd-descrdiv">Description :<br>
- Use to setPublicDeviceInfo<br>
- <p></div>
+        <div class="jd-descrdiv">Description:<br>
+ bind Source Manager data callback, client to set call back to Source manager.</div>
   
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-2" >
         <td class="jd-typecol"><nobr>
             
             
             
             
             
-            boolean</nobr>
+            void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#unregisterListener(hsae.vehicle.ivi.DeviceInfoListener,%20android.content.IntentFilter)">unregisterListener</a></span>(<a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a> listener, IntentFilter filter)</nobr>
+        <span class="sympad"><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcManager.html#setDevStatus(int,%20int,%20int)">setDevStatus</a></span>(int app, int dev, int extra)</nobr>
         
-        <div class="jd-descrdiv">Description :<br>
- Use to unregisterListener<br>
- <p></div>
+        <div class="jd-descrdiv">Description:<br>
+ Set device status then notify meter<br>
+ <p>
+ Note:<br>
+ (1)	Set device connection status and send this info will to meter.</div>
   
   </td></tr>
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-2" >
         <td class="jd-typecol"><nobr>
             
             
             
             
             
-            boolean</nobr>
+            void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#unregisterListener(hsae.vehicle.ivi.DeviceInfoListener)">unregisterListener</a></span>(<a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a> listener)</nobr>
+        <span class="sympad"><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcManager.html#switchSrc(int,%20java.lang.String,%20boolean)">switchSrc</a></span>(int app, String pkg, boolean isLoadApp)</nobr>
         
-        <div class="jd-descrdiv">Description :<br>
- Use to unregisterListener<br>
- <p></div>
+        <div class="jd-descrdiv">Description:<br>
+ try to change source and switch source with startup application<br>
+ Note:<br>
+ (1) Source manager will save current source for last mode, so please set "pkg" with valid client package name.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-2" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcManager.html#updateInfoToMeter(int,%20java.lang.String)">updateInfoToMeter</a></span>(int app, String obj)</nobr>
+        
+        <div class="jd-descrdiv">Description:<br>
+ Notify meter and status bar that a media play status,play list and so on from HMI through source manager immediately.</div>
   
   </td></tr>
 
@@ -754,52 +770,6 @@ From class
 <!-- Constants -->
 
 
-<!-- ========= ENUM CONSTANTS DETAIL ======== -->
-<h2>Constants</h2>
-
-
-
-
-<A NAME="MEDIA_STATE_TABLE"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        String
-      </span>
-        MEDIA_STATE_TABLE
-    </h4>
-      <div class="api-level">
-        
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <p>device info table define
-</p>
-
-    
-        <div class="jd-tagdata">
-        <span class="jd-tagtitle">Constant Value: </span>
-        <span>
-            
-                "hsae.vehicle.media.state"
-            
-        </span>
-        </div>
-    
-    </div>
-</div>
-
-
-
-
 <!-- Fields -->
 
 
@@ -819,9 +789,103 @@ From class
 
 
 
-<A NAME="getDeviceInfo(java.lang.String,%20java.lang.String)"></A>
+<A NAME="getCurrentSrc()"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        
+        
+        
+        
+        int
+      </span>
+      <span class="sympad">getCurrentSrc</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description:<br>
+ Get current Id of source(application)<br>
+ <p></p>
+    <table class="responsive">
+      <tr><th colspan=2>Returns</th></tr>
+      <tr>
+        <td><code>int</code></td>
+        <td width="100%">Get current Id of source, refer to <code><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcMgrConstants.html">HsaeSrcMgrConstants</a></code></td>
+      </tr>
+    </table>
+      <table class="responsive">
+      <tr><th colspan=2>Throws</th></tr>
+        <tr>
+          <td><code>RemoteException</code></td>
+          <td width="100%">remote exception
+</td>
+        </tr>
+      </table>
+  
+
+    </div>
+</div>
+
+
+<A NAME="getInstance(android.content.Context)"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        
+        
+        static
+        
+        <a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcManager.html">HsaeSrcManager</a>
+      </span>
+      <span class="sympad">getInstance</span>
+      <span class="normal">(Context context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p></p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>context</code></td>
+        <td width="100%">
+          <code>Context</code>
+          <!-- no parameter comment --></td>
+      </tr>
+    </table>
+    <table class="responsive">
+      <tr><th colspan=2>Returns</th></tr>
+      <tr>
+        <td><code><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcManager.html">HsaeSrcManager</a></code></td>
+        <td width="100%"><!-- no returns description in source --></td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+
+<A NAME="getSrcExtraInfo(java.lang.String,%20java.util.Map)"></A>
+
+<div class="jd-details api apilevel-2"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public
@@ -831,52 +895,60 @@ From class
         
         String
       </span>
-      <span class="sympad">getDeviceInfo</span>
-      <span class="normal">(String tableName, String key)</span>
+      <span class="sympad">getSrcExtraInfo</span>
+      <span class="normal">(String type, Map params)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <p>Description :<br>
- Use to getDeviceInfo<br>
+  <p>Description:<br>
+ Get source (application) Id from last mode<br>
  <p></p>
     <table class="responsive">
     <tr><th colspan=2>Parameters</th></tr>
       <tr>
-        <td><code>tableName</code></td>
+        <td><code>type</code></td>
         <td width="100%">
           <code>String</code>:
-          the value tableName , refer to <code><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#MEDIA_STATE_TABLE">MEDIA_STATE_TABLE</a></code></td>
+          type(not be used)</td>
       </tr>
       <tr>
-        <td><code>key</code></td>
+        <td><code>params</code></td>
         <td width="100%">
-          <code>String</code>:
-          The value key, The key include source key package name</td>
+          <code>Map</code>:
+          parameters(not be used)</td>
       </tr>
     </table>
     <table class="responsive">
       <tr><th colspan=2>Returns</th></tr>
       <tr>
         <td><code>String</code></td>
-        <td width="100%">The data return by String.
+        <td width="100%">string value of source(application) Id of last mode, refer to <code><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcMgrConstants.html">HsaeSrcMgrConstants</a></code></td>
+      </tr>
+    </table>
+      <table class="responsive">
+      <tr><th colspan=2>Throws</th></tr>
+        <tr>
+          <td><code>RemoteException</code></td>
+          <td width="100%">remote exception
 </td>
-      </tr>
-    </table>
+        </tr>
+      </table>
+  
 
     </div>
 </div>
 
 
-<A NAME="registerListener(hsae.vehicle.ivi.DeviceInfoListener,%20android.content.IntentFilter)"></A>
+<A NAME="hasBreakOffState(java.lang.String)"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-2"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public
@@ -886,110 +958,60 @@ From class
         
         boolean
       </span>
-      <span class="sympad">registerListener</span>
-      <span class="normal">(<a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a> listener, IntentFilter filter)</span>
+      <span class="sympad">hasBreakOffState</span>
+      <span class="normal">(String type)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <p>Description :<br>
- Use to registerListener<br>
- <p></p>
-    <table class="responsive">
-    <tr><th colspan=2>Parameters</th></tr>
-      <tr>
-        <td><code>listener</code></td>
-        <td width="100%">
-          <code>DeviceInfoListener</code>:
-          The callback object <code><a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a></code></td>
-      </tr>
-      <tr>
-        <td><code>filter</code></td>
-        <td width="100%">
-          <code>IntentFilter</code>:
-          IntentFilter  <code><a href="../../../../reference/android/content/IntentFilter.html">IntentFilter</a></code></td>
-      </tr>
-    </table>
-    <table class="responsive">
-      <tr><th colspan=2>Returns</th></tr>
-      <tr>
-        <td><code>boolean</code></td>
-        <td width="100%">true: register is success ; false:register is failed</td>
-      </tr>
-    </table>
-  <div>
-      <p><b>See also:</b></p>
-      <ul class="nolist"><li><code><a href="../../../../reference/android/content/IntentFilter.html">IntentFilter</a></code></li>
-      </ul>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="registerListener(hsae.vehicle.ivi.DeviceInfoListener)"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public
-        
-        
-        
-        
-        boolean
-      </span>
-      <span class="sympad">registerListener</span>
-      <span class="normal">(<a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a> listener)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <p>Description :<br>
- Use to registerListener<br>
- <p></p>
-    <table class="responsive">
-    <tr><th colspan=2>Parameters</th></tr>
-      <tr>
-        <td><code>listener</code></td>
-        <td width="100%">
-          <code>DeviceInfoListener</code>:
-          The callback object <code><a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a></code></td>
-      </tr>
-    </table>
-    <table class="responsive">
-      <tr><th colspan=2>Returns</th></tr>
-      <tr>
-        <td><code>boolean</code></td>
-        <td width="100%">true: register is success ; false:register is failed
-
+  <p>Description:<br>
+ check if has out signal that break do src switch<br>
  <p>
  Note:<br>
- same to registerListener (DeviceInfoListener listener, IntentFilter filter),<br>
- no filter,default to full filter, all key change will call back to listener.
-</td>
+ (1)	if the param type set value "null", check whether have any break<br>
+ (2)	if the param type contains "power" and "update".
+ "power": whether in power modes those allow to play or not;"update": whether in USB update now<br>
+ (3)  Check whether have break state which cause source manager cannot give response for hard key and so on.<br>
+ (4)  Check whether have break state which don’t allow to play in HMI.<br></p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>type</code></td>
+        <td width="100%">
+          <code>String</code>:
+          break type， now the type contains "power" and "update"</td>
       </tr>
     </table>
+    <table class="responsive">
+      <tr><th colspan=2>Returns</th></tr>
+      <tr>
+        <td><code>boolean</code></td>
+        <td width="100%">true if in break state, otherwise false</td>
+      </tr>
+    </table>
+      <table class="responsive">
+      <tr><th colspan=2>Throws</th></tr>
+        <tr>
+          <td><code>RemoteException</code></td>
+          <td width="100%">remote exception
+</td>
+        </tr>
+      </table>
+  
 
     </div>
 </div>
 
 
-<A NAME="setDeviceInfo(java.lang.String,%20java.lang.String,%20java.lang.String)"></A>
+<A NAME="removeCallback(ISrcCallback,%20int)"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-2"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public
@@ -999,57 +1021,53 @@ From class
         
         void
       </span>
-      <span class="sympad">setDeviceInfo</span>
-      <span class="normal">(String tableName, String key, String value)</span>
+      <span class="sympad">removeCallback</span>
+      <span class="normal">(ISrcCallback c, int app)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <p>Description :<br>
- Use to setDeviceInfo<br>
+  <p>Description:<br>
+ Client to remove call back from Source manager,It’s the opposite operation to <code><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcManager.html#setCallback(ISrcCallback,%20int)">setCallback(ISrcCallback, int)</a></code>
  <p></p>
     <table class="responsive">
     <tr><th colspan=2>Parameters</th></tr>
       <tr>
-        <td><code>tableName</code></td>
+        <td><code>c</code></td>
         <td width="100%">
-          <code>String</code>:
-          the value tableName , refer to <code><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#MEDIA_STATE_TABLE">MEDIA_STATE_TABLE</a></code></td>
+          <code>ISrcCallback</code>:
+          Instance which implemented “ISrcCallback” interface</td>
       </tr>
       <tr>
-        <td><code>key</code></td>
+        <td><code>app</code></td>
         <td width="100%">
-          <code>String</code>:
-          The value key, The key include source key package name
-                  <p>
-                  for examlpe:
-                  <p>
-                  App foo.test set a key hsaeTest,the real key is foo.test.hsaeTest.<br>
-                  So you get must use foo.test.hsaeTest ,this is designed for different app can use same local key.
-                  <p></td>
-      </tr>
-      <tr>
-        <td><code>value</code></td>
-        <td width="100%">
-          <code>String</code>:
-          the value need String type
-</td>
+          <code>int</code>:
+          the app mean application Id, the value of application Id refer to <code><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcMgrConstants.html">HsaeSrcMgrConstants</a></code></td>
       </tr>
     </table>
+      <table class="responsive">
+      <tr><th colspan=2>Throws</th></tr>
+        <tr>
+          <td><code>RemoteException</code></td>
+          <td width="100%">remote exception
+</td>
+        </tr>
+      </table>
+  
 
     </div>
 </div>
 
 
-<A NAME="setPublicDeviceInfo(java.lang.String,%20java.lang.String,%20java.lang.String)"></A>
+<A NAME="setCallback(ISrcCallback,%20int)"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-2"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public
@@ -1059,161 +1077,250 @@ From class
         
         void
       </span>
-      <span class="sympad">setPublicDeviceInfo</span>
-      <span class="normal">(String tableName, String key, String value)</span>
+      <span class="sympad">setCallback</span>
+      <span class="normal">(ISrcCallback c, int app)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <p>Description :<br>
- Use to setPublicDeviceInfo<br>
- <p></p>
-    <table class="responsive">
-    <tr><th colspan=2>Parameters</th></tr>
-      <tr>
-        <td><code>tableName</code></td>
-        <td width="100%">
-          <code>String</code>:
-          the value tableName , refer to <code><a href="../../../../reference/hsae/vehicle/ivi/HsaeDeviceInfo.html#MEDIA_STATE_TABLE">MEDIA_STATE_TABLE</a></code></td>
-      </tr>
-      <tr>
-        <td><code>key</code></td>
-        <td width="100%">
-          <code>String</code>:
-          The value key, The key include source key package name
-                  <p>
-                  for examlpe:
-                  App foo.test set a key hsaeTest,the real key is foo.test.hsaeTest.
-                  So you get must use foo.test.hsaeTest ,this is designed for different app can use same local key.
-                  <p></td>
-      </tr>
-      <tr>
-        <td><code>value</code></td>
-        <td width="100%">
-          <code>String</code>:
-          the value need String type
-</td>
-      </tr>
-    </table>
-
-    </div>
-</div>
-
-
-<A NAME="unregisterListener(hsae.vehicle.ivi.DeviceInfoListener,%20android.content.IntentFilter)"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public
-        
-        
-        
-        
-        boolean
-      </span>
-      <span class="sympad">unregisterListener</span>
-      <span class="normal">(<a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a> listener, IntentFilter filter)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <p>Description :<br>
- Use to unregisterListener<br>
- <p></p>
-    <table class="responsive">
-    <tr><th colspan=2>Parameters</th></tr>
-      <tr>
-        <td><code>listener</code></td>
-        <td width="100%">
-          <code>DeviceInfoListener</code>:
-          The callback object <code><a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a></code></td>
-      </tr>
-      <tr>
-        <td><code>filter</code></td>
-        <td width="100%">
-          <code>IntentFilter</code>:
-          IntentFilter  <code><a href="../../../../reference/android/content/IntentFilter.html">IntentFilter</a></code></td>
-      </tr>
-    </table>
-    <table class="responsive">
-      <tr><th colspan=2>Returns</th></tr>
-      <tr>
-        <td><code>boolean</code></td>
-        <td width="100%">true: register is success ; false:register is failed</td>
-      </tr>
-    </table>
-  <div>
-      <p><b>See also:</b></p>
-      <ul class="nolist"><li><code><a href="../../../../reference/android/content/IntentFilter.html">IntentFilter</a></code></li>
-      </ul>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="unregisterListener(hsae.vehicle.ivi.DeviceInfoListener)"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public
-        
-        
-        
-        
-        boolean
-      </span>
-      <span class="sympad">unregisterListener</span>
-      <span class="normal">(<a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a> listener)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 1</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <p>Description :<br>
- Use to unregisterListener<br>
- <p></p>
-    <table class="responsive">
-    <tr><th colspan=2>Parameters</th></tr>
-      <tr>
-        <td><code>listener</code></td>
-        <td width="100%">
-          <code>DeviceInfoListener</code>:
-          The callback object <code><a href="../../../../reference/hsae/vehicle/ivi/DeviceInfoListener.html">DeviceInfoListener</a></code></td>
-      </tr>
-    </table>
-    <table class="responsive">
-      <tr><th colspan=2>Returns</th></tr>
-      <tr>
-        <td><code>boolean</code></td>
-        <td width="100%">true: unregister is success; false: unregister is  failed
-
+  <p>Description:<br>
+ bind Source Manager data callback, client to set call back to Source manager.<br>
  <p>
  Note:<br>
- same to registerListener (DeviceInfoListener listener, IntentFilter filter),<br>
- no filter,default to full filter, all key change will call back to listener.
-</td>
+ Source manager will remove previous registered call back when duplicate call from client, for case that client crashed.<br>
+ It’s the opposite operation to <code><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcManager.html#removeCallback(ISrcCallback,%20int)">removeCallback(ISrcCallback, int)</a></code></p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>c</code></td>
+        <td width="100%">
+          <code>ISrcCallback</code>:
+          Instance which implemented “ISrcCallback” interface</td>
+      </tr>
+      <tr>
+        <td><code>app</code></td>
+        <td width="100%">
+          <code>int</code>:
+          the app mean application Id, the value of application Id refer to <code><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcMgrConstants.html">HsaeSrcMgrConstants</a></code></td>
       </tr>
     </table>
+      <table class="responsive">
+      <tr><th colspan=2>Throws</th></tr>
+        <tr>
+          <td><code>RemoteException</code></td>
+          <td width="100%">remote exception
+</td>
+        </tr>
+      </table>
+  
+
+    </div>
+</div>
+
+
+<A NAME="setDevStatus(int,%20int,%20int)"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">setDevStatus</span>
+      <span class="normal">(int app, int dev, int extra)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description:<br>
+ Set device status then notify meter<br>
+ <p>
+ Note:<br>
+ (1)	Set device connection status and send this info will to meter.<br>
+ (2)  If source’ status is disconnected, source switch will ignore it.<br>
+ (3)  If source’ status is connected, source switch will switch to it.<br></p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>app</code></td>
+        <td width="100%">
+          <code>int</code>:
+          the app mean application Id, the value of application Id refer to <code><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcMgrConstants.html">HsaeSrcMgrConstants</a></code></td>
+      </tr>
+      <tr>
+        <td><code>dev</code></td>
+        <td width="100%">
+          <code>int</code>:
+          device status: 1: active, 0: inactive</td>
+      </tr>
+      <tr>
+        <td><code>extra</code></td>
+        <td width="100%">
+          <code>int</code>:
+          extra data which is not be used(Not be used)</td>
+      </tr>
+    </table>
+      <table class="responsive">
+      <tr><th colspan=2>Throws</th></tr>
+        <tr>
+          <td><code>RemoteException</code></td>
+          <td width="100%">remote exception
+</td>
+        </tr>
+      </table>
+  
+
+    </div>
+</div>
+
+
+<A NAME="switchSrc(int,%20java.lang.String,%20boolean)"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">switchSrc</span>
+      <span class="normal">(int app, String pkg, boolean isLoadApp)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description:<br>
+ try to change source and switch source with startup application<br>
+ Note:<br>
+ (1) Source manager will save current source for last mode, so please set "pkg" with valid client package name.<br>
+ (2) For HMI clients like USB/BT music, local radio, please set "isLoadApp" to "false". <br>
+ (3) If set "isLoadApp" to "true", source manager will start specified activity by app Id (only music & radio).<br>
+ (4) If set "isLoadApp" to "false", source manager don’t start any activity.<br></p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>app</code></td>
+        <td width="100%">
+          <code>int</code>:
+          the app mean application Id, the value of application Id refer to <code><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcMgrConstants.html">HsaeSrcMgrConstants</a></code></td>
+      </tr>
+      <tr>
+        <td><code>pkg</code></td>
+        <td width="100%">
+          <code>String</code>:
+          client package name</td>
+      </tr>
+      <tr>
+        <td><code>isLoadApp</code></td>
+        <td width="100%">
+          <code>boolean</code>:
+          flag to identify whether start music/radio activity if top activity is not
+                  true: start music/radio activity, false: don't start</td>
+      </tr>
+    </table>
+      <table class="responsive">
+      <tr><th colspan=2>Throws</th></tr>
+        <tr>
+          <td><code>RemoteException</code></td>
+          <td width="100%">remote exception
+</td>
+        </tr>
+      </table>
+  
+
+    </div>
+</div>
+
+
+<A NAME="updateInfoToMeter(int,%20java.lang.String)"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public
+        
+        
+        
+        
+        void
+      </span>
+      <span class="sympad">updateInfoToMeter</span>
+      <span class="normal">(int app, String obj)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description:<br>
+ Notify meter and status bar that a media play status,play list and so on from HMI through source manager immediately.<br>
+ <p>
+ Note:<br>
+ (1)Parameter “obj” defined in document <a href="https://github.com/HSAEAPI/Hsae_wiki/blob/master/json%20obj%20for%20%20Multimedia.md" target="_blank">JSON object</a><br>
+ (2)Source manager just pass the JSON string to meter & just give "sub_type", "author" & "title" to status bar to avoid message length over bind’s limit when "sub_type" is "hu_play_start".<br>
+ (3)If specified app Id (1st parameter) does not match current source Id, update info to meter will be ignored.<br>
+ (4)Valid values of field “data” & “source” in JSON between DA and IC communication as below:<br>
+ 0: invalid
+ 1: USB music
+ 2: USB video
+ 3: BT music
+ 4: Online music
+ 5: FM
+ 6: AM
+ 7: Online radio</p>
+    <table class="responsive">
+    <tr><th colspan=2>Parameters</th></tr>
+      <tr>
+        <td><code>app</code></td>
+        <td width="100%">
+          <code>int</code>:
+          the app mean application Id, the value of application Id refer to <code><a href="../../../../reference/com/hsae/libsrcmanager/HsaeSrcMgrConstants.html">HsaeSrcMgrConstants</a></code></td>
+      </tr>
+      <tr>
+        <td><code>obj</code></td>
+        <td width="100%">
+          <code>String</code>:
+          JSON object ,refer to <a href="https://github.com/HSAEAPI/Hsae_wiki/blob/master/json%20obj%20for%20%20Multimedia.md" target="_blank">JSON object</a></td>
+      </tr>
+    </table>
+      <table class="responsive">
+      <tr><th colspan=2>Throws</th></tr>
+        <tr>
+          <td><code>RemoteException</code></td>
+          <td width="100%">remote exception
+</td>
+        </tr>
+      </table>
+  
 
     </div>
 </div>
