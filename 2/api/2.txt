@@ -498,6 +498,7 @@ package hsae.vehicle.light {
     ctor public LightData();
     method public static final java.lang.String toString(int);
     field public static final int ATMOSPHERE_LAMP_HOLIDAY = 453181744; // 0x1b030130
+    field public static final int VEHICLE_SPEED_LAMP = 453181953; // 0x1b030201
   }
 
   public abstract interface LightListener {
@@ -531,6 +532,7 @@ package hsae.vehicle.meter {
     field public static final int DTE_STATUS = 403113475; // 0x18070603
     field public static final int FIREWORKS_COLOR = 402851840; // 0x18030800
     field public static final int FUEL_LEVEL = 403113478; // 0x18070606
+    field public static final int METER_WARNING_LIST = 402917888; // 0x18040a00
     field public static final int PARKING_BRAKE_ON = 402851584; // 0x18030700
     field public static final int PERF_ODOMETER = 403113216; // 0x18070500
     field public static final int PROJECTION_SIZE = 402850050; // 0x18030102
@@ -547,7 +549,6 @@ package hsae.vehicle.meter {
     field public static final int ROW_3_RIGHT = 402850338; // 0x18030222
     field public static final int SINGLE_DRIVE_FUEL = 403112707; // 0x18070303
     field public static final int SINGLE_DRIVE_TIME = 402981634; // 0x18050302
-    field public static final int TIME_FORMAT = 402849793; // 0x18030001
     field public static final int TRIP_A = 403113217; // 0x18070501
     field public static final int TRIP_B = 403113218; // 0x18070502
     field public static final int UI_STYLE = 402850049; // 0x18030101
@@ -561,7 +562,7 @@ package hsae.vehicle.meter {
     method public boolean setMeterArrayData(int, double[]);
     method public boolean setMeterData(int, double);
     method public boolean unregisterListener(hsae.vehicle.meter.VehicleMeterListener);
-    method public boolean unregisterListener(hsae.vehicle.meter.VehicleMeterListener, android.content.IntentFilter);
+    method public deprecated boolean unregisterListener(hsae.vehicle.meter.VehicleMeterListener, android.content.IntentFilter);
   }
 
   public abstract interface VehicleMeterListener {

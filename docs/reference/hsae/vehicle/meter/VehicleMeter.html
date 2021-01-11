@@ -370,9 +370,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../reference/hsae/vehicle/meter/VehicleMeter.html#getMeterArrayData(int)">getMeterArrayData</a></span>(int index)</nobr>
         
-        <div class="jd-descrdiv">Description :<br>
- Use to  getMeterArrayData<br>
- <p></div>
+        <div class="jd-descrdiv">Description :Use to  get vec type meter data.</div>
   
   </td></tr>
 
@@ -390,9 +388,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../reference/hsae/vehicle/meter/VehicleMeter.html#getMeterData(int)">getMeterData</a></span>(int index)</nobr>
         
-        <div class="jd-descrdiv">Description :<br>
- Use to  getMeterData<br>
- <p></div>
+        <div class="jd-descrdiv">Description :Use to  get meter data which is not vec type.</div>
   
   </td></tr>
 
@@ -410,9 +406,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../reference/hsae/vehicle/meter/VehicleMeter.html#registerListener(hsae.vehicle.meter.VehicleMeterListener)">registerListener</a></span>(<a href="../../../../reference/hsae/vehicle/meter/VehicleMeterListener.html">VehicleMeterListener</a> listener)</nobr>
         
-        <div class="jd-descrdiv">Description :<br>
- Use to  registerListener<br>
- <p></div>
+        <div class="jd-descrdiv">Description : register VehicleMeterListener without filter，filter rule please refer to<code><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html">MeterMetadata</a></code>.</div>
   
   </td></tr>
 
@@ -430,9 +424,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../reference/hsae/vehicle/meter/VehicleMeter.html#registerListener(hsae.vehicle.meter.VehicleMeterListener,%20android.content.IntentFilter)">registerListener</a></span>(<a href="../../../../reference/hsae/vehicle/meter/VehicleMeterListener.html">VehicleMeterListener</a> listener, IntentFilter filter)</nobr>
         
-        <div class="jd-descrdiv">Description :<br>
- Use to  registerListener<br>
- <p></div>
+        <div class="jd-descrdiv">Description :register VehicleMeterListener with filter, filter rule please refer to<code><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html">MeterMetadata</a></code> class description.</div>
   
   </td></tr>
 
@@ -450,9 +442,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../reference/hsae/vehicle/meter/VehicleMeter.html#setMeterArrayData(int,%20double[])">setMeterArrayData</a></span>(int index, double[] value)</nobr>
         
-        <div class="jd-descrdiv">Description :<br>
- Use to  setMeterArrayData<br>
- <p></div>
+        <div class="jd-descrdiv">Description :Use to  set vec type meter data.</div>
   
   </td></tr>
 
@@ -470,9 +460,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../reference/hsae/vehicle/meter/VehicleMeter.html#setMeterData(int,%20double)">setMeterData</a></span>(int index, double value)</nobr>
         
-        <div class="jd-descrdiv">Description :<br>
- Use to  setMeterData<br>
- <p></div>
+        <div class="jd-descrdiv">Description : Use to  set meter data which is not vec type.</div>
   
   </td></tr>
 
@@ -490,9 +478,10 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../reference/hsae/vehicle/meter/VehicleMeter.html#unregisterListener(hsae.vehicle.meter.VehicleMeterListener,%20android.content.IntentFilter)">unregisterListener</a></span>(<a href="../../../../reference/hsae/vehicle/meter/VehicleMeterListener.html">VehicleMeterListener</a> listener, IntentFilter filter)</nobr>
         
-        <div class="jd-descrdiv">Description :<br>
- Use to  unregisterListener<br>
- <p></div>
+        <div class="jd-descrdiv"><em>
+      This method is deprecated.
+    abandon this api,we need't filter when we unregister listener
+</em></div>
   
   </td></tr>
 
@@ -510,9 +499,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../reference/hsae/vehicle/meter/VehicleMeter.html#unregisterListener(hsae.vehicle.meter.VehicleMeterListener)">unregisterListener</a></span>(<a href="../../../../reference/hsae/vehicle/meter/VehicleMeterListener.html">VehicleMeterListener</a> listener)</nobr>
         
-        <div class="jd-descrdiv">Description :<br>
- Use to  unregisterListener<br>
- <p></div>
+        <div class="jd-descrdiv">Description :Use to  unregister VehicleMeterListener;this method also can unregister VehicleMeterListener with filter .</div>
   
   </td></tr>
 
@@ -799,8 +786,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <p>Description :<br>
- Use to  getMeterArrayData<br>
+  <p>Description :Use to  get vec type meter data.
+ <br>
  <p></p>
     <table class="responsive">
     <tr><th colspan=2>Parameters</th></tr>
@@ -848,8 +835,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <p>Description :<br>
- Use to  getMeterData<br>
+  <p>Description :Use to  get meter data which is not vec type.
+ <br>
  <p></p>
     <table class="responsive">
     <tr><th colspan=2>Parameters</th></tr>
@@ -864,14 +851,10 @@ From class
       <tr><th colspan=2>Returns</th></tr>
       <tr>
         <td><code>double</code></td>
-        <td width="100%">The data return by double, the detail value refers to <code><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html">MeterMetadata</a></code> fields value define;</td>
+        <td width="100%">The data return by double, the detail value refers to <code><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html">MeterMetadata</a></code> fields value define;
+</td>
       </tr>
     </table>
-  <div>
-      <p><b>See also:</b></p>
-      <ul class="nolist"><li><code><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html">MeterMetadata</a></code></li>
-      </ul>
-  </div>
 
     </div>
 </div>
@@ -901,9 +884,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <p>Description :<br>
- Use to  registerListener<br>
- <p></p>
+  <p>Description : register VehicleMeterListener without filter，filter rule please refer to<code><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html">MeterMetadata</a></code>.<br>
+ Note:<br>
+ same to unregisterListener(VehicleMeterListener listener) should compared</p>
     <table class="responsive">
     <tr><th colspan=2>Parameters</th></tr>
       <tr>
@@ -917,10 +900,9 @@ From class
       <tr><th colspan=2>Returns</th></tr>
       <tr>
         <td><code>boolean</code></td>
-        <td width="100%">true: register is success; false:register failed
+        <td width="100%">true: register is success; <br>
+ false:register failed <br>
  <p>
- Note:<br>
- same to unregisterListener(VehicleMeterListener listener) should compared
 </td>
       </tr>
     </table>
@@ -953,9 +935,10 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <p>Description :<br>
- Use to  registerListener<br>
- <p></p>
+  <p>Description :register VehicleMeterListener with filter, filter rule please refer to<code><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html">MeterMetadata</a></code> class description.
+ <p>
+ <br> Note:
+ <br></p>
     <table class="responsive">
     <tr><th colspan=2>Parameters</th></tr>
       <tr>
@@ -975,11 +958,8 @@ From class
       <tr><th colspan=2>Returns</th></tr>
       <tr>
         <td><code>boolean</code></td>
-        <td width="100%">true: register is success; false:register failed
-
- <p>
- Note:<br>
- same to unregisterListener(VehicleMeterListener listener, IntentFilter filter) should compared
+        <td width="100%">true: register is success;<br>
+ false:register failed <br>
 </td>
       </tr>
     </table>
@@ -1012,8 +992,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <p>Description :<br>
- Use to  setMeterArrayData<br>
+  <p>Description :Use to  set vec type meter data.
+ <br>
  <p></p>
     <table class="responsive">
     <tr><th colspan=2>Parameters</th></tr>
@@ -1034,7 +1014,8 @@ From class
       <tr><th colspan=2>Returns</th></tr>
       <tr>
         <td><code>boolean</code></td>
-        <td width="100%">true: set meter data  is success; false:set meter data failed
+        <td width="100%">true: set meter data  is success; <br>
+ false:set meter data failed <br>
 </td>
       </tr>
     </table>
@@ -1067,8 +1048,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <p>Description :<br>
- Use to  setMeterData<br>
+  <p>Description : Use to  set meter data which is not vec type.
+ <br>
  <p></p>
     <table class="responsive">
     <tr><th colspan=2>Parameters</th></tr>
@@ -1089,7 +1070,8 @@ From class
       <tr><th colspan=2>Returns</th></tr>
       <tr>
         <td><code>boolean</code></td>
-        <td width="100%">true: set meter data  is success; false:set meter data failed
+        <td width="100%">true: set meter data  is success; <br>
+ false:set meter data failed <br>
 </td>
       </tr>
     </table>
@@ -1121,9 +1103,13 @@ From class
 
       </div>
     <div class="jd-details-descr">
-      
-  <p>Description :<br>
- Use to  unregisterListener<br>
+      <p>
+  <p class="caution"><strong>
+      This method is deprecated.</strong><br/>
+    abandon this api,we need't filter when we unregister listener
+
+  </p>
+  <p>Description : Use to  unregisterListener.<br>
  <p></p>
     <table class="responsive">
     <tr><th colspan=2>Parameters</th></tr>
@@ -1144,12 +1130,8 @@ From class
       <tr><th colspan=2>Returns</th></tr>
       <tr>
         <td><code>boolean</code></td>
-        <td width="100%">{boolean}
- <p>
- true: unregister is success
- <p>
- false:unregister is failed
-</td>
+        <td width="100%">true: unregister is success <br>
+ false:unregister is failed</td>
       </tr>
     </table>
 
@@ -1181,8 +1163,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <p>Description :<br>
- Use to  unregisterListener<br>
+  <p>Description :Use to  unregister VehicleMeterListener;this method also can unregister VehicleMeterListener with filter .<br>
  <p></p>
     <table class="responsive">
     <tr><th colspan=2>Parameters</th></tr>
@@ -1197,7 +1178,8 @@ From class
       <tr><th colspan=2>Returns</th></tr>
       <tr>
         <td><code>boolean</code></td>
-        <td width="100%">true: unregister is success; false:unregister failed
+        <td width="100%">true: unregister is success; <br>
+ false:unregister failed <br>
 </td>
       </tr>
     </table>

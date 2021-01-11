@@ -295,7 +295,25 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">This static constant field define VehicleLight index, it's describe this index corresponding function value, type and access.</p>
+<p itemprop="articleBody">This static constant field define VehicleLight index, it's describe this index corresponding function value, type and access.
+ <p>
+ <br>The constant features define below:
+ <br>Type : Hsae support those data type { STRING ,BOOLEAN ,INT32 ,INT32_VEC ,INT64 ,INT64_VEC ,FLOAT ,FLOAT_VEC ,BYTES};if not define this field,the default is INT32.
+ <br>
+ <br>Access : Hsae support those permission { READ ,WRITE ,READ_WRITE}; if not define this field,the default is READ.
+ <br>
+ <br>Value : the get/set and listen value define.
+ <br>
+ <br>Listen : Hsae Listen type { ON_CHANGE ,CONTINUOUS ,STATIC};if not define this field,the default is CONTINUOUS.
+ <br>         ON_CHANGE : this field value will notify when it change,process can get this field without filter.
+ <br>         CONTINUOUS : this field value will notify only process set the filter,without filter,process can't get it by listener.
+ <br>         STATIC : this field value will never notify,but process maybe can read or write if access field has permission.
+ <p>
+ <p> filter set Example:
+ <pre>
+     List<Integer> filter = new ArrayList<>();
+     filter.add(id)
+     vehicleLight.registerListener(vehicleListener, filter);</p>
 
 
 
@@ -345,6 +363,13 @@ Summary:
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/light/LightData.html#ATMOSPHERE_LAMP_HOLIDAY">ATMOSPHERE_LAMP_HOLIDAY</a></td>
         <td class="jd-descrcol" width="100%">Description: this Constant id is use to set ATMOSPHERE_LAMP_HOLIDAY value.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/light/LightData.html#VEHICLE_SPEED_LAMP">VEHICLE_SPEED_LAMP</a></td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to set VEHICLE_SPEED_LAMP value.</td>
     </tr>
     
     
@@ -681,6 +706,7 @@ From class
   <p>Description: this Constant id is use to set ATMOSPHERE_LAMP_HOLIDAY value.
  <br>Type : INT32;
  <br>Access : WRITE
+ <br>Listen : STATIC
  <br>Value : range 0 ~ 15;detail refer to vehicle can protocol define.
  <br>-1 : invalid
 </p>
@@ -692,6 +718,50 @@ From class
             
                 453181744
                 (0x1b030130)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="VEHICLE_SPEED_LAMP"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        VEHICLE_SPEED_LAMP
+    </h4>
+      <div class="api-level">
+        
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <p>Description: this Constant id is use to set VEHICLE_SPEED_LAMP value.
+ <br>Type : INT32;
+ <br>Access : WRITE
+ <br>Listen : STATIC
+ <br>Value : range 0 ~ 3;detail refer to vehicle can protocol define.
+ <br>-1 : invalid
+</p>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                453181953
+                (0x1b030201)
             
         </span>
         </div>
