@@ -740,8 +740,8 @@ Summary:
         <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.html#registerNotifyListener(int)">registerNotifyListener</a></span>(int index)</nobr>
         
         <div class="jd-descrdiv">Description :<br>
-    Register notify listener<br>
-<p></div>
+ Register high frequency signal notify listener<br>
+ <p></div>
   
   </td></tr>
 
@@ -780,8 +780,8 @@ Summary:
         <span class="sympad"><a href="../../../../../reference/com/hsae/autosdk/vehicle/Vehicle.html#unregisterNotifyListener(int)">unregisterNotifyListener</a></span>(int index)</nobr>
         
         <div class="jd-descrdiv">Description :<br>
-    Unregister notify listener<br>
-<p></div>
+ Unregister high frequency signal notify listener<br>
+ <p></div>
   
   </td></tr>
 
@@ -1978,8 +1978,8 @@ Do not loop to get the TPMS status to avoid excessive CPU usage.<br></td>
     <div class="jd-details-descr">
       
   <p>Description :<br>
-    Register notify listener<br>
-<p></p>
+ Register high frequency signal notify listener<br>
+ <p></p>
     <table class="responsive">
     <tr><th colspan=2>Parameters</th></tr>
       <tr>
@@ -1987,11 +1987,11 @@ Do not loop to get the TPMS status to avoid excessive CPU usage.<br></td>
         <td width="100%">
           <code>int</code>:
           signal type, refers to Value.
-<p>
-Value:<br>
- ISignalNotifyListener.SIGNAL_SPEED = 1;<br>
- ISignalNotifyListener.SIGNAL_STRANGLE = 2;<br>
- ISignalNotifyListener.SIGNAL_ENGINE_RPM = 3;<br></td>
+              <p>
+              Value:<br>
+              Vehicle.SPEED = 1; vehicle speed id<br>
+              Vehicle.ROUTE = 2; vehicle engine rpm id<br>
+              Vehicle.STEER = 3; vehicle strangle id<br></td>
       </tr>
     </table>
     <table class="responsive">
@@ -1999,7 +1999,6 @@ Value:<br>
       <tr>
         <td><code>boolean</code></td>
         <td width="100%">false: register notify listener fail;  true: register notify listener success
-
 </td>
       </tr>
     </table>
@@ -2082,20 +2081,20 @@ Value:<br>
     <div class="jd-details-descr">
       
   <p>Description :<br>
-    Unregister notify listener<br>
-<p></p>
+ Unregister high frequency signal notify listener<br>
+ <p></p>
     <table class="responsive">
     <tr><th colspan=2>Parameters</th></tr>
       <tr>
         <td><code>index</code></td>
         <td width="100%">
           <code>int</code>:
-          signal type, refers to Value.
-<p>
-Value:<br>
- ISignalNotifyListener.SIGNAL_SPEED = 1;<br>
- ISignalNotifyListener.SIGNAL_STRANGLE = 2;<br>
- ISignalNotifyListener.SIGNAL_ENGINE_RPM = 3;<br></td>
+          signal type, refers to Vehicle static field define.
+              <p>
+              index id define:<br>
+              Vehicle.SPEED = 1; vehicle speed id<br>
+              Vehicle.ROUTE = 2; vehicle engine rpm id<br>
+              Vehicle.STEER = 3; vehicle strangle id<br></td>
       </tr>
     </table>
     <table class="responsive">
