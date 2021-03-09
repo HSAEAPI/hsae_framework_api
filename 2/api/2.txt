@@ -530,7 +530,7 @@ package hsae.vehicle.meter {
     field public static final int DRIVE_TIME_A = 402982400; // 0x18050600
     field public static final int DRIVE_TIME_B = 402982401; // 0x18050601
     field public static final int DTE_STATUS = 403113475; // 0x18070603
-    field public static final int ENGINE_STATUS = 402917889; // 0x18040a01
+    field public static final int ENGINE_STATUS = 402852353; // 0x18030a01
     field public static final int FIREWORKS_COLOR = 402851840; // 0x18030800
     field public static final int FUEL_LEVEL = 403113478; // 0x18070606
     field public static final int METER_WARNING_LIST = 402917888; // 0x18040a00
