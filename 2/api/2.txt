@@ -525,6 +525,7 @@ package hsae.vehicle.meter {
     field public static final int AVERAGE_FUEL_CONS_B = 403113481; // 0x18070609
     field public static final int AVERAGE_VEHICLE_SPEED_A = 403113476; // 0x18070604
     field public static final int AVERAGE_VEHICLE_SPEED_B = 403113477; // 0x18070605
+    field public static final int BOOTMOVIE_STATUS = 402852354; // 0x18030a02
     field public static final int CUMULATIVE_AVERAGE_FUEL = 403113479; // 0x18070607
     field public static final int CUMULATIVE_FUEL_ARRAY = 403179776; // 0x18080900
     field public static final int DRIVE_TIME_A = 402982400; // 0x18050600
