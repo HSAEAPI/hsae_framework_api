@@ -401,7 +401,7 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-2" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#BOOTMOVIE_STATUS">BOOTMOVIE_STATUS</a></td>
         <td class="jd-descrcol" width="100%">Description: this Constant id is use to get and listen boot animation status.</td>
@@ -418,7 +418,7 @@ Summary:
     <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../reference/hsae/vehicle/meter/MeterMetadata.html#CUMULATIVE_FUEL_ARRAY">CUMULATIVE_FUEL_ARRAY</a></td>
-        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get/set and listen fuel array data;  The array default length is 30 ; sample: {7.7,7.8,......,6.4}.</td>
+        <td class="jd-descrcol" width="100%">Description: this Constant id is use to get/set and listen fuel array data;  The array default length is 34 ; sample: {7.7,7.8,......,6.4}.</td>
     </tr>
     
     
@@ -1177,7 +1177,7 @@ From class
 
 <A NAME="BOOTMOVIE_STATUS"></A>
 
-<div class="jd-details api apilevel-"> 
+<div class="jd-details api apilevel-2"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -1189,6 +1189,7 @@ From class
     </h4>
       <div class="api-level">
         
+  Added in <a href="../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">API level 2</a>
         
   
 
@@ -1284,7 +1285,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <p>Description: this Constant id is use to get/set and listen fuel array data;  The array default length is 30 ; sample: {7.7,7.8,......,6.4}.
+  <p>Description: this Constant id is use to get/set and listen fuel array data;  The array default length is 34 ; sample: {7.7,7.8,......,6.4}.
  <br>Type : FLOAT_VEC[];
  <br>Access : READ_WRITE
  <br>Listen : ON_CHANGE
@@ -1293,7 +1294,7 @@ From class
  <br>Note :
  <br>array[0] is best average fuel value;
  <br>array[1] is accumulative average fuel value;
- <br>array[2~29] is every single drive time average fuel value;
+ <br>array[2~33] is every single drive time average fuel value;
  <br>set this index is use to reset this array data;
 </p>
 

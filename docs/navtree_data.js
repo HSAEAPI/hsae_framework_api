@@ -11,7 +11,7 @@ var NAVTREE_DATA =
 , null, null ], [ "Classes", null, [ [ "AutoSettings_external", "reference/com/hsae/autosdk_external/settings/AutoSettings_external.html", null, "1", null ] ]
 , null, null ] ]
 , "1", null ], [ "com.hsae.libsrcmanager", "reference/com/hsae/libsrcmanager/package-summary.html", [ [ "Interfaces", null, [ [ "HsaeSrcMgrConstants", "reference/com/hsae/libsrcmanager/HsaeSrcMgrConstants.html", null, "2", null ] ]
-, null, null ], [ "Classes", null, [ [ "HsaeSrcManager", "reference/com/hsae/libsrcmanager/HsaeSrcManager.html", null, "2", null ] ]
+, null, null ], [ "Classes", null, [ [ "HsaeSrcManager", "reference/com/hsae/libsrcmanager/HsaeSrcManager.html", null, "2", null ], [ "SrcManagerCallback", "reference/com/hsae/libsrcmanager/SrcManagerCallback.html", null, "2", null ] ]
 , null, null ] ]
 , "2", null ], [ "hsae.content", "reference/hsae/content/package-summary.html", [ [ "Classes", null, [ [ "HsaeContext", "reference/hsae/content/HsaeContext.html", null, "1", null ] ]
 , null, null ] ]

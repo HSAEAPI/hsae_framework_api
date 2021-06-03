@@ -360,10 +360,11 @@ package com.hsae.libsrcmanager {
 
   public final class HsaeSrcManager {
     method public int getCurrentSrc() throws android.os.RemoteException;
-    method public static com.hsae.libsrcmanager.HsaeSrcManager getInstance(android.content.Context);
+    method public int getLastMode() throws android.os.RemoteException;
     method public java.lang.String getSrcExtraInfo(java.lang.String, java.util.Map) throws android.os.RemoteException;
     method public boolean hasBreakOffState(java.lang.String) throws android.os.RemoteException;
     method public void removeCallback(ISrcCallback, int) throws android.os.RemoteException;
+    method public void removeLastMode(int) throws android.os.RemoteException;
     method public void setCallback(ISrcCallback, int) throws android.os.RemoteException;
     method public void setDevStatus(int, int, int) throws android.os.RemoteException;
     method public void switchSrc(int, java.lang.String, boolean) throws android.os.RemoteException;
@@ -371,10 +372,29 @@ package com.hsae.libsrcmanager {
   }
 
   public abstract interface HsaeSrcMgrConstants {
+    field public static final int APP_BAIDU_IQIYI = 115; // 0x73
+    field public static final int APP_BAIDU_KTV = 116; // 0x74
+    field public static final int APP_BAIDU_RADIO = 112; // 0x70
+    field public static final int APP_BAIDU_SHORTVIDEO = 113; // 0x71
+    field public static final int APP_BAIDU_USBVIDEO = 114; // 0x72
     field public static final int APP_BT_MUSIC = 103; // 0x67
     field public static final int APP_CAR_LIFE = 108; // 0x6c
     field public static final int APP_USB_AUDIO = 101; // 0x65
     field public static final int APP_USB_VIDEO = 102; // 0x66
+    field public static final int APP_ZENSRCEENSAVER = 117; // 0x75
+  }
+
+  public class SrcManagerCallback extends ISrcCallback.Stub {
+    ctor public SrcManagerCallback();
+    method public void exitAppBySrc(int) throws android.os.RemoteException;
+    method public void notifyOutSignal(int, int) throws android.os.RemoteException;
+    method public void playAppointedMeta(int, int) throws android.os.RemoteException;
+    method public void playPrevOrNext(int, int, boolean, int) throws android.os.RemoteException;
+    method public void playStateChangBySrc(int, int) throws android.os.RemoteException;
+    method public void reRequstAudioFoucs(int) throws android.os.RemoteException;
+    method public void requestPlayListMore(int, int, int) throws android.os.RemoteException;
+    method public void requestUsbBTStatus() throws android.os.RemoteException;
+    method public void switchApp2Src(int) throws android.os.RemoteException;
   }
 
 }
